@@ -13,7 +13,7 @@ nExps  = length(exp_files)*length(precisions)*length(similarityMetrics)...
     *length(alphas);
 k=0; % benchmark iterator
 computing = 'cpu';
-gpu       = 'V100';
+hardware  = 'cpu3';
 %%
 % dry run to compile 
 fprintf('Performing dry run to compile libraries \n');
@@ -66,4 +66,4 @@ for i=1:length(exp_files)% loop through models
     end
 end
 
-writetable(resTable,[computing '_' gpu '_resTable.mat']);
+writetable(resTable,[computing '_' hardware '_resTable.mat']);
