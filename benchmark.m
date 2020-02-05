@@ -1,3 +1,5 @@
+addpath(genpath('../netZooM'))
+addpath(genpath('../gibbon'))
 % Experimental setup
 model_alias= {'large','medium','small'};
 exp_files  = {'THP-1.tsv','Hugo_exp1_lcl.txt','Hugo_exp1_lcl.txt'};
