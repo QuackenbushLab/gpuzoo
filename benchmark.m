@@ -43,8 +43,8 @@ for i=1:length(exp_files)% loop through models
                 k=k+1;
                 % LCL 
                 exp_file=exp_files{i};motif_file=motif_files{i};ppi_file=ppi_files{i};
-                modeProcess=modeProcesses{i};similarityMetric=similarityMetrics{1};
-                precision=precision{1};
+                modeProcess=modeProcesses{i};%similarityMetric=similarityMetric{1};
+                %precision=precision{1};
                 % Large model (1603,43698)
                 [Exp,RegNet,TFCoop,TFNames,GeneNames]=processData(exp_file,motif_file,ppi_file,modeProcess);
                 disp('Computing coexpression network:');
@@ -57,13 +57,13 @@ for i=1:length(exp_files)% loop through models
                 GeneCoReg = NormalizeNetwork(GeneCoReg);
                 TFCoop    = NormalizeNetwork(TFCoop);
                 % run panda and measure runtime
-                tic;AgNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric,...
-                    computing, precision, 0);runtime=toc;
+                tic;AgNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
+                    computing, precision{1}, 0);runtime=toc;
                 resTable.runtime{k}   = runtime;
                 resTable.model{k}     = model_alias{i};
-                resTable.precision{k} = precision;
+                resTable.precision{k} = precision{1};
                 resTable.alpha{k}     = alpha;
-                resTable.similarity{k}= similarityMetric;     
+                resTable.similarity{k}= similarityMetric{1};     
             end
         end
     end
