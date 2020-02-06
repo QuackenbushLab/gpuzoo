@@ -15,7 +15,7 @@ nExps  = length(exp_files)*length(precisions)*length(similarityMetrics)...
     *length(alphas);
 k=0; % benchmark iterator
 computing = 'cpu';
-hardware  = 'cpu3';
+hardware  = 'cpu2';
 %%
 % dry run to compile 
 fprintf('Performing dry run to compile libraries \n');
@@ -30,7 +30,7 @@ save_pairs = 0;%saving in .pairs format
 modeProcess= 'intersection';
 AgNet = panda_run(lib_path,exp_file, motif_file, ppi_file, panda_out,...
             save_temp, alpha, save_pairs, 'intersection',0.5, 0,...
-            'Tfunction', computing, 'signle', 0);
+            'Tfunction', computing, 'single', 0);
 %%
 %prepare results table
 resTable = table({'runtime','model','precision','alpha','similarity'});
@@ -43,7 +43,8 @@ for i=1:length(exp_files)% loop through models
                 k=k+1;
                 % LCL 
                 exp_file=exp_files{i};motif_file=motif_files{i};ppi_file=ppi_files{i};
-                modeProcess=modeProcesses{i};
+                modeProcess=modeProcesses{i};similarityMetric=similarityMetrics{1};
+                precision=precision{1};
                 % Large model (1603,43698)
                 [Exp,RegNet,TFCoop,TFNames,GeneNames]=processData(exp_file,motif_file,ppi_file,modeProcess);
                 disp('Computing coexpression network:');
