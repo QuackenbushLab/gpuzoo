@@ -7,10 +7,10 @@ motif_files= {'motif_complete_reduced.txt','Hugo_motifCellLine.txt','Hugo_motifC
 ppi_files  = {'ppi_complete.txt','ppi2015_freezeCellLine.txt','ppi2015_freezeCellLine.txt'};
 precisions = {'single','double'};
 similarityMetrics = {'Tfunction','euclidean',...
-    'squaredeuclidean','seuclidean','cityblock','minkowski','chebychev','cosine',...
-    'correlation'};
+    'squaredeuclidean','seuclidean','cityblock','chebychev','cosine',...
+    'correlation'};%took out minkowski
 modeProcesses = {'union','union','intersection'};
-alphas = [0.05,0.1,0.2];
+alphas = [0.1,0.2];
 nExps  = length(exp_files)*length(precisions)*length(similarityMetrics)...
     *length(alphas);
 k=0; % benchmark iterator
