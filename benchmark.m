@@ -33,7 +33,8 @@ AgNet = panda_run(lib_path,exp_file, motif_file, ppi_file, panda_out,...
             'Tfunction', computing, 'single', 0);
 %%
 %prepare results table
-resTable = table({'runtime','model','precision','alpha','similarity'});
+resTable = array2table(zeros(0,5));
+resTable.Properties.VariableNames = {'runtime','model','precision','alpha','similarity'};
 %%
 fprintf('Starting benchmarks \n');
 for i=1:length(exp_files)% loop through models
@@ -69,4 +70,4 @@ for i=1:length(exp_files)% loop through models
     end
 end
 
-writetable(resTable,[computing '_' hardware '_resTable.mat']);
+writetable(resTable,[computing '_' hardware '_resTable.csv']);
