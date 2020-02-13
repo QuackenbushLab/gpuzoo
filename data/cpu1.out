@@ -1,0 +1,1786 @@
+
+                                               < M A T L A B (R) >
+                                     Copyright 1984-2019 The MathWorks, Inc.
+                                     R2019a (9.6.0.1072779) 64-bit (glnxa64)
+                                                  March 8, 2019
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Performing dry run to compile libraries 
+07-Feb-2020 05:40:41
+Input expression file: test_data/expression.txt
+Input motif file: test_data/motifTest.txt
+Input PPI file: test_data/ppi.txt
+Output PANDA network: 
+Output temp data: 
+Alpha: 0.10
+Reading in expression data!
+1000 genes and 50 conditions!
+Elapsed time is 0.999864 seconds.
+Reading in motif data!
+Reading in ppi data!
+661 TFs and 103400 edges!
+Computing coexpression network:
+Elapsed time is 0.120933 seconds.
+Normalizing Networks:
+Elapsed time is 0.059770 seconds.
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 1000 Genes and 661 TFs took 0.367121 seconds!
+All done!
+07-Feb-2020 05:40:43
+Starting benchmarks 
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.600199 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 43698 Genes and 1603 TFs took 484.214880 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.538156 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 18134.984447 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.520446 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 18100.517097 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.563772 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 18366.055990 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.512647 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 43698 Genes and 1603 TFs took 18150.155677 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.499508 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 43698 Genes and 1603 TFs took 18233.700809 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.480817 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 43698 Genes and 1603 TFs took 4504.701512 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.511784 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 43698 Genes and 1603 TFs took 4670.627814 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.512041 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 43698 Genes and 1603 TFs took 291.510852 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.486892 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 8768.237863 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.489813 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 8767.841535 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.487382 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 8886.852980 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.478287 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 43698 Genes and 1603 TFs took 8772.204493 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.501293 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 43698 Genes and 1603 TFs took 8817.582330 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.496392 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 43698 Genes and 1603 TFs took 2140.992564 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.488654 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 43698 Genes and 1603 TFs took 2244.149010 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.494230 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 43698 Genes and 1603 TFs took 182.586617 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.482739 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 5641.230526 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.496923 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 5628.142971 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.503303 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 5698.142471 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.550930 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 43698 Genes and 1603 TFs took 5640.639975 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.496472 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 43698 Genes and 1603 TFs took 5663.117417 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.532885 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 43698 Genes and 1603 TFs took 1403.083671 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.497507 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 43698 Genes and 1603 TFs took 1435.841802 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.497250 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 43698 Genes and 1603 TFs took 959.427950 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.508282 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 25297.117429 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.549921 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 25303.120182 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.526656 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 26026.258435 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.487050 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 43698 Genes and 1603 TFs took 25415.223439 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.495398 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 43698 Genes and 1603 TFs took 25621.506835 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.492749 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 43698 Genes and 1603 TFs took 8823.783883 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.489547 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 43698 Genes and 1603 TFs took 9241.089061 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.495006 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 43698 Genes and 1603 TFs took 494.406479 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.494982 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 12224.083173 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.486464 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 12242.720534 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.488814 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 12646.165445 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.492766 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 43698 Genes and 1603 TFs took 12302.347358 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.488937 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 43698 Genes and 1603 TFs took 12477.641845 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.488933 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 43698 Genes and 1603 TFs took 4448.053127 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.484203 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 43698 Genes and 1603 TFs took 4482.981343 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.493119 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 43698 Genes and 1603 TFs took 334.418709 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.487681 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 7906.329166 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.498048 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 7901.280840 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.497761 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 8128.982149 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.500857 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 43698 Genes and 1603 TFs took 7880.835545 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.493001 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 43698 Genes and 1603 TFs took 7962.520112 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.485450 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 43698 Genes and 1603 TFs took 2728.090528 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.485821 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 43698 Genes and 1603 TFs took 2863.991763 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.922735 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 134.059987 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.836047 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 27149 Genes and 652 TFs took 3346.117842 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.832381 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 27149 Genes and 652 TFs took 3308.525329 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.844257 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 27149 Genes and 652 TFs took 3324.080315 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.834763 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 27149 Genes and 652 TFs took 3367.696839 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.843791 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 27149 Genes and 652 TFs took 3344.609812 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.843140 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 27149 Genes and 652 TFs took 1017.050012 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.836708 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 27149 Genes and 652 TFs took 1056.001610 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.839825 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 73.794287 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.841713 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 27149 Genes and 652 TFs took 1595.711441 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.827399 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 27149 Genes and 652 TFs took 1616.028713 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.837228 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 27149 Genes and 652 TFs took 1583.881152 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.832045 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 27149 Genes and 652 TFs took 1650.326133 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.826183 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 27149 Genes and 652 TFs took 1618.028601 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.822870 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 27149 Genes and 652 TFs took 489.311227 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.834495 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 27149 Genes and 652 TFs took 489.489295 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.831580 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 52.900369 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.833162 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 27149 Genes and 652 TFs took 1043.442531 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.834299 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 27149 Genes and 652 TFs took 996.494130 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.831054 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 27149 Genes and 652 TFs took 1015.061810 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.834683 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 27149 Genes and 652 TFs took 1046.991839 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.838275 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 27149 Genes and 652 TFs took 1058.999677 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.828070 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 27149 Genes and 652 TFs took 311.553634 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.836647 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 27149 Genes and 652 TFs took 313.179687 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.823816 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 247.345438 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.837843 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 27149 Genes and 652 TFs took 4474.253873 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.831090 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 27149 Genes and 652 TFs took 4422.944399 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.826340 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 27149 Genes and 652 TFs took 4536.467932 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.825455 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 27149 Genes and 652 TFs took 4514.995490 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.826779 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 27149 Genes and 652 TFs took 4486.338911 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.828299 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 27149 Genes and 652 TFs took 2019.504145 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.844643 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 27149 Genes and 652 TFs took 2018.033999 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.845326 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 130.089485 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.832275 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 27149 Genes and 652 TFs took 2143.772214 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.844658 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 27149 Genes and 652 TFs took 2144.555770 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.831899 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 27149 Genes and 652 TFs took 2166.065547 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.842325 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 27149 Genes and 652 TFs took 2207.533416 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.839199 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 27149 Genes and 652 TFs took 2173.145034 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.835402 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 27149 Genes and 652 TFs took 966.564204 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.845869 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 27149 Genes and 652 TFs took 958.984426 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.831093 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 95.255773 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.829491 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 27149 Genes and 652 TFs took 1423.979064 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.838454 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 27149 Genes and 652 TFs took 1330.212949 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.824228 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 27149 Genes and 652 TFs took 1385.098456 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.840191 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 27149 Genes and 652 TFs took 1394.310545 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.835907 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 27149 Genes and 652 TFs took 1426.848402 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.899148 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 27149 Genes and 652 TFs took 637.193299 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.836818 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 27149 Genes and 652 TFs took 608.362689 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.827297 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 1000 Genes and 652 TFs took 0.394782 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.832069 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 1000 Genes and 652 TFs took 7.047194 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.844956 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 1000 Genes and 652 TFs took 6.911855 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.843137 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 1000 Genes and 652 TFs took 7.060455 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.840668 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 1000 Genes and 652 TFs took 6.967516 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.824844 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 1000 Genes and 652 TFs took 7.212459 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.824155 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 1000 Genes and 652 TFs took 2.641478 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.825552 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 1000 Genes and 652 TFs took 2.845311 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.824557 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 1000 Genes and 652 TFs took 0.192889 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.824512 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 1000 Genes and 652 TFs took 3.424351 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.833060 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 1000 Genes and 652 TFs took 3.319641 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.837951 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 1000 Genes and 652 TFs took 3.436063 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.828771 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 1000 Genes and 652 TFs took 3.431095 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.834621 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 1000 Genes and 652 TFs took 3.485411 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.825298 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 1000 Genes and 652 TFs took 1.301760 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.824661 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 1000 Genes and 652 TFs took 1.332939 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.826309 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 1000 Genes and 652 TFs took 0.138319 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.826346 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 1000 Genes and 652 TFs took 2.234260 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.830473 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 1000 Genes and 652 TFs took 2.134530 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.824619 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 1000 Genes and 652 TFs took 2.209049 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.820966 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 1000 Genes and 652 TFs took 2.144732 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.833623 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 1000 Genes and 652 TFs took 2.285220 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.835174 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 1000 Genes and 652 TFs took 0.858522 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.844535 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 1000 Genes and 652 TFs took 0.890673 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.836440 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 1000 Genes and 652 TFs took 0.604196 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.835514 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 1000 Genes and 652 TFs took 8.039943 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.833772 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 1000 Genes and 652 TFs took 7.923239 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.842956 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 1000 Genes and 652 TFs took 8.006726 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.840465 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 1000 Genes and 652 TFs took 7.962072 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.836267 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 1000 Genes and 652 TFs took 8.249213 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.843398 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 1000 Genes and 652 TFs took 3.625963 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.834155 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 1000 Genes and 652 TFs took 3.910699 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.833643 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 1000 Genes and 652 TFs took 0.316833 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.840595 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 1000 Genes and 652 TFs took 3.887145 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.829582 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 1000 Genes and 652 TFs took 3.765640 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.832390 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 1000 Genes and 652 TFs took 3.864860 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.835361 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 1000 Genes and 652 TFs took 3.903252 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.834223 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 1000 Genes and 652 TFs took 3.980358 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.836844 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 1000 Genes and 652 TFs took 1.811689 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.833741 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 1000 Genes and 652 TFs took 1.885340 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.833041 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 1000 Genes and 652 TFs took 0.225945 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.838290 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 1000 Genes and 652 TFs took 2.543462 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.838052 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 1000 Genes and 652 TFs took 2.421007 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.842686 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 1000 Genes and 652 TFs took 2.481465 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.833998 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 1000 Genes and 652 TFs took 2.431379 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.833183 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 1000 Genes and 652 TFs took 2.598500 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.842184 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 1000 Genes and 652 TFs took 1.196959 seconds!
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 0.838417 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 652000 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 1000 Genes and 652 TFs took 1.207774 seconds!
+{Error using writetable (line 155)
+Unrecognized file extension '.mat'.  Use the 'FileType' parameter to specify the file type.
+
+Error in benchmark (line 72)
+writetable(resTable,[computing '_' hardware '_resTable.mat']);
+} 
+
+resTable =
+
+  144x6 table
+
+                                 Var1                                   runtime        model      precision     alpha          similarity    
+    ______________________________________________________________    ____________    ________    _________    ________    __________________
+
+    'runtime'    'model'    'precision'    'alpha'    'similarity'    [  484.4132]    'large'     'single'     [0.1000]    'Tfunction'       
+    []         []             []         []              []           [1.8135e+04]    'large'     'single'     [0.1000]    'euclidean'       
+    []         []             []         []              []           [1.8101e+04]    'large'     'single'     [0.1000]    'squaredeuclidean'
+    []         []             []         []              []           [1.8366e+04]    'large'     'single'     [0.1000]    'seuclidean'      
+    []         []             []         []              []           [1.8150e+04]    'large'     'single'     [0.1000]    'cityblock'       
+    []         []             []         []              []           [1.8234e+04]    'large'     'single'     [0.1000]    'chebychev'       
+    []         []             []         []              []           [4.5049e+03]    'large'     'single'     [0.1000]    'cosine'          
+    []         []             []         []              []           [4.6709e+03]    'large'     'single'     [0.1000]    'correlation'     
+    []         []             []         []              []           [  291.7367]    'large'     'single'     [0.2000]    'Tfunction'       
+    []         []             []         []              []           [8.7685e+03]    'large'     'single'     [0.2000]    'euclidean'       
+    []         []             []         []              []           [8.7681e+03]    'large'     'single'     [0.2000]    'squaredeuclidean'
+    []         []             []         []              []           [8.8871e+03]    'large'     'single'     [0.2000]    'seuclidean'      
+    []         []             []         []              []           [8.7724e+03]    'large'     'single'     [0.2000]    'cityblock'       
+    []         []             []         []              []           [8.8178e+03]    'large'     'single'     [0.2000]    'chebychev'       
+    []         []             []         []              []           [2.1412e+03]    'large'     'single'     [0.2000]    'cosine'          
+    []         []             []         []              []           [2.2444e+03]    'large'     'single'     [0.2000]    'correlation'     
+    []         []             []         []              []           [  182.8141]    'large'     'single'     [0.3000]    'Tfunction'       
+    []         []             []         []              []           [5.6415e+03]    'large'     'single'     [0.3000]    'euclidean'       
+    []         []             []         []              []           [5.6284e+03]    'large'     'single'     [0.3000]    'squaredeuclidean'
+    []         []             []         []              []           [5.6984e+03]    'large'     'single'     [0.3000]    'seuclidean'      
+    []         []             []         []              []           [5.6409e+03]    'large'     'single'     [0.3000]    'cityblock'       
+    []         []             []         []              []           [5.6634e+03]    'large'     'single'     [0.3000]    'chebychev'       
+    []         []             []         []              []           [1.4033e+03]    'large'     'single'     [0.3000]    'cosine'          
+    []         []             []         []              []           [1.4361e+03]    'large'     'single'     [0.3000]    'correlation'     
+    []         []             []         []              []           [  959.8744]    'large'     'double'     [0.1000]    'Tfunction'       
+    []         []             []         []              []           [2.5298e+04]    'large'     'double'     [0.1000]    'euclidean'       
+    []         []             []         []              []           [2.5304e+04]    'large'     'double'     [0.1000]    'squaredeuclidean'
+    []         []             []         []              []           [2.6027e+04]    'large'     'double'     [0.1000]    'seuclidean'      
+    []         []             []         []              []           [2.5416e+04]    'large'     'double'     [0.1000]    'cityblock'       
+    []         []             []         []              []           [2.5622e+04]    'large'     'double'     [0.1000]    'chebychev'       
+    []         []             []         []              []           [8.8242e+03]    'large'     'double'     [0.1000]    'cosine'          
+    []         []             []         []              []           [9.2415e+03]    'large'     'double'     [0.1000]    'correlation'     
+    []         []             []         []              []           [  494.8352]    'large'     'double'     [0.2000]    'Tfunction'       
+    []         []             []         []              []           [1.2225e+04]    'large'     'double'     [0.2000]    'euclidean'       
+    []         []             []         []              []           [1.2243e+04]    'large'     'double'     [0.2000]    'squaredeuclidean'
+    []         []             []         []              []           [1.2647e+04]    'large'     'double'     [0.2000]    'seuclidean'      
+    []         []             []         []              []           [1.2303e+04]    'large'     'double'     [0.2000]    'cityblock'       
+    []         []             []         []              []           [1.2478e+04]    'large'     'double'     [0.2000]    'chebychev'       
+    []         []             []         []              []           [4.4485e+03]    'large'     'double'     [0.2000]    'cosine'          
+    []         []             []         []              []           [4.4834e+03]    'large'     'double'     [0.2000]    'correlation'     
+    []         []             []         []              []           [  334.8433]    'large'     'double'     [0.3000]    'Tfunction'       
+    []         []             []         []              []           [7.9068e+03]    'large'     'double'     [0.3000]    'euclidean'       
+    []         []             []         []              []           [7.9017e+03]    'large'     'double'     [0.3000]    'squaredeuclidean'
+    []         []             []         []              []           [8.1294e+03]    'large'     'double'     [0.3000]    'seuclidean'      
+    []         []             []         []              []           [7.8813e+03]    'large'     'double'     [0.3000]    'cityblock'       
+    []         []             []         []              []           [7.9630e+03]    'large'     'double'     [0.3000]    'chebychev'       
+    []         []             []         []              []           [2.7285e+03]    'large'     'double'     [0.3000]    'cosine'          
+    []         []             []         []              []           [2.8644e+03]    'large'     'double'     [0.3000]    'correlation'     
+    []         []             []         []              []           [  134.2046]    'medium'    'single'     [0.1000]    'Tfunction'       
+    []         []             []         []              []           [3.3462e+03]    'medium'    'single'     [0.1000]    'euclidean'       
+    []         []             []         []              []           [3.3087e+03]    'medium'    'single'     [0.1000]    'squaredeuclidean'
+    []         []             []         []              []           [3.3242e+03]    'medium'    'single'     [0.1000]    'seuclidean'      
+    []         []             []         []              []           [3.3678e+03]    'medium'    'single'     [0.1000]    'cityblock'       
+    []         []             []         []              []           [3.3447e+03]    'medium'    'single'     [0.1000]    'chebychev'       
+    []         []             []         []              []           [1.0172e+03]    'medium'    'single'     [0.1000]    'cosine'          
+    []         []             []         []              []           [1.0561e+03]    'medium'    'single'     [0.1000]    'correlation'     
+    []         []             []         []              []           [   73.9262]    'medium'    'single'     [0.2000]    'Tfunction'       
+    []         []             []         []              []           [1.5958e+03]    'medium'    'single'     [0.2000]    'euclidean'       
+    []         []             []         []              []           [1.6162e+03]    'medium'    'single'     [0.2000]    'squaredeuclidean'
+    []         []             []         []              []           [1.5840e+03]    'medium'    'single'     [0.2000]    'seuclidean'      
+    []         []             []         []              []           [1.6505e+03]    'medium'    'single'     [0.2000]    'cityblock'       
+    []         []             []         []              []           [1.6182e+03]    'medium'    'single'     [0.2000]    'chebychev'       
+    []         []             []         []              []           [  489.4407]    'medium'    'single'     [0.2000]    'cosine'          
+    []         []             []         []              []           [  489.6180]    'medium'    'single'     [0.2000]    'correlation'     
+    []         []             []         []              []           [   53.0292]    'medium'    'single'     [0.3000]    'Tfunction'       
+    []         []             []         []              []           [1.0436e+03]    'medium'    'single'     [0.3000]    'euclidean'       
+    []         []             []         []              []           [  996.6227]    'medium'    'single'     [0.3000]    'squaredeuclidean'
+    []         []             []         []              []           [1.0152e+03]    'medium'    'single'     [0.3000]    'seuclidean'      
+    []         []             []         []              []           [1.0471e+03]    'medium'    'single'     [0.3000]    'cityblock'       
+    []         []             []         []              []           [1.0591e+03]    'medium'    'single'     [0.3000]    'chebychev'       
+    []         []             []         []              []           [  311.6830]    'medium'    'single'     [0.3000]    'cosine'          
+    []         []             []         []              []           [  313.3085]    'medium'    'single'     [0.3000]    'correlation'     
+    []         []             []         []              []           [  247.5100]    'medium'    'double'     [0.1000]    'Tfunction'       
+    []         []             []         []              []           [4.4745e+03]    'medium'    'double'     [0.1000]    'euclidean'       
+    []         []             []         []              []           [4.4232e+03]    'medium'    'double'     [0.1000]    'squaredeuclidean'
+    []         []             []         []              []           [4.5367e+03]    'medium'    'double'     [0.1000]    'seuclidean'      
+    []         []             []         []              []           [4.5152e+03]    'medium'    'double'     [0.1000]    'cityblock'       
+    []         []             []         []              []           [4.4866e+03]    'medium'    'double'     [0.1000]    'chebychev'       
+    []         []             []         []              []           [2.0197e+03]    'medium'    'double'     [0.1000]    'cosine'          
+    []         []             []         []              []           [2.0183e+03]    'medium'    'double'     [0.1000]    'correlation'     
+    []         []             []         []              []           [  130.2558]    'medium'    'double'     [0.2000]    'Tfunction'       
+    []         []             []         []              []           [2.1440e+03]    'medium'    'double'     [0.2000]    'euclidean'       
+    []         []             []         []              []           [2.1448e+03]    'medium'    'double'     [0.2000]    'squaredeuclidean'
+    []         []             []         []              []           [2.1663e+03]    'medium'    'double'     [0.2000]    'seuclidean'      
+    []         []             []         []              []           [2.2078e+03]    'medium'    'double'     [0.2000]    'cityblock'       
+    []         []             []         []              []           [2.1734e+03]    'medium'    'double'     [0.2000]    'chebychev'       
+    []         []             []         []              []           [  966.7880]    'medium'    'double'     [0.2000]    'cosine'          
+    []         []             []         []              []           [  959.2034]    'medium'    'double'     [0.2000]    'correlation'     
+    []         []             []         []              []           [   95.4219]    'medium'    'double'     [0.3000]    'Tfunction'       
+    []         []             []         []              []           [1.4242e+03]    'medium'    'double'     [0.3000]    'euclidean'       
+    []         []             []         []              []           [1.3304e+03]    'medium'    'double'     [0.3000]    'squaredeuclidean'
+    []         []             []         []              []           [1.3853e+03]    'medium'    'double'     [0.3000]    'seuclidean'      
+    []         []             []         []              []           [1.3945e+03]    'medium'    'double'     [0.3000]    'cityblock'       
+    []         []             []         []              []           [1.4271e+03]    'medium'    'double'     [0.3000]    'chebychev'       
+    []         []             []         []              []           [  637.4193]    'medium'    'double'     [0.3000]    'cosine'          
+    []         []             []         []              []           [  608.5840]    'medium'    'double'     [0.3000]    'correlation'     
+    []         []             []         []              []           [    0.4019]    'small'     'single'     [0.1000]    'Tfunction'       
+    []         []             []         []              []           [    7.0473]    'small'     'single'     [0.1000]    'euclidean'       
+    []         []             []         []              []           [    6.9120]    'small'     'single'     [0.1000]    'squaredeuclidean'
+    []         []             []         []              []           [    7.0606]    'small'     'single'     [0.1000]    'seuclidean'      
+    []         []             []         []              []           [    6.9677]    'small'     'single'     [0.1000]    'cityblock'       
+    []         []             []         []              []           [    7.2126]    'small'     'single'     [0.1000]    'chebychev'       
+    []         []             []         []              []           [    2.6416]    'small'     'single'     [0.1000]    'cosine'          
+    []         []             []         []              []           [    2.8455]    'small'     'single'     [0.1000]    'correlation'     
+    []         []             []         []              []           [    0.1930]    'small'     'single'     [0.2000]    'Tfunction'       
+    []         []             []         []              []           [    3.4245]    'small'     'single'     [0.2000]    'euclidean'       
+    []         []             []         []              []           [    3.3198]    'small'     'single'     [0.2000]    'squaredeuclidean'
+    []         []             []         []              []           [    3.4362]    'small'     'single'     [0.2000]    'seuclidean'      
+    []         []             []         []              []           [    3.4312]    'small'     'single'     [0.2000]    'cityblock'       
+    []         []             []         []              []           [    3.4856]    'small'     'single'     [0.2000]    'chebychev'       
+    []         []             []         []              []           [    1.3019]    'small'     'single'     [0.2000]    'cosine'          
+    []         []             []         []              []           [    1.3331]    'small'     'single'     [0.2000]    'correlation'     
+    []         []             []         []              []           [    0.1385]    'small'     'single'     [0.3000]    'Tfunction'       
+    []         []             []         []              []           [    2.2344]    'small'     'single'     [0.3000]    'euclidean'       
+    []         []             []         []              []           [    2.1347]    'small'     'single'     [0.3000]    'squaredeuclidean'
+    []         []             []         []              []           [    2.2092]    'small'     'single'     [0.3000]    'seuclidean'      
+    []         []             []         []              []           [    2.1449]    'small'     'single'     [0.3000]    'cityblock'       
+    []         []             []         []              []           [    2.2854]    'small'     'single'     [0.3000]    'chebychev'       
+    []         []             []         []              []           [    0.8587]    'small'     'single'     [0.3000]    'cosine'          
+    []         []             []         []              []           [    0.8908]    'small'     'single'     [0.3000]    'correlation'     
+    []         []             []         []              []           [    0.6043]    'small'     'double'     [0.1000]    'Tfunction'       
+    []         []             []         []              []           [    8.0401]    'small'     'double'     [0.1000]    'euclidean'       
+    []         []             []         []              []           [    7.9234]    'small'     'double'     [0.1000]    'squaredeuclidean'
+    []         []             []         []              []           [    8.0068]    'small'     'double'     [0.1000]    'seuclidean'      
+    []         []             []         []              []           [    7.9622]    'small'     'double'     [0.1000]    'cityblock'       
+    []         []             []         []              []           [    8.2493]    'small'     'double'     [0.1000]    'chebychev'       
+    []         []             []         []              []           [    3.6261]    'small'     'double'     [0.1000]    'cosine'          
+    []         []             []         []              []           [    3.9108]    'small'     'double'     [0.1000]    'correlation'     
+    []         []             []         []              []           [    0.3169]    'small'     'double'     [0.2000]    'Tfunction'       
+    []         []             []         []              []           [    3.8873]    'small'     'double'     [0.2000]    'euclidean'       
+    []         []             []         []              []           [    3.7658]    'small'     'double'     [0.2000]    'squaredeuclidean'
+    []         []             []         []              []           [    3.8650]    'small'     'double'     [0.2000]    'seuclidean'      
+    []         []             []         []              []           [    3.9034]    'small'     'double'     [0.2000]    'cityblock'       
+    []         []             []         []              []           [    3.9805]    'small'     'double'     [0.2000]    'chebychev'       
+    []         []             []         []              []           [    1.8118]    'small'     'double'     [0.2000]    'cosine'          
+    []         []             []         []              []           [    1.8855]    'small'     'double'     [0.2000]    'correlation'     
+    []         []             []         []              []           [    0.2261]    'small'     'double'     [0.3000]    'Tfunction'       
+    []         []             []         []              []           [    2.5436]    'small'     'double'     [0.3000]    'euclidean'       
+    []         []             []         []              []           [    2.4211]    'small'     'double'     [0.3000]    'squaredeuclidean'
+    []         []             []         []              []           [    2.4816]    'small'     'double'     [0.3000]    'seuclidean'      
+    []         []             []         []              []           [    2.4315]    'small'     'double'     [0.3000]    'cityblock'       
+    []         []             []         []              []           [    2.5986]    'small'     'double'     [0.3000]    'chebychev'       
+    []         []             []         []              []           [    1.1971]    'small'     'double'     [0.3000]    'cosine'          
+    []         []             []         []              []           [    1.2079]    'small'     'double'     [0.3000]    'correlation'     
+
+
+resTable =
+
+  144x5 table
+
+      runtime        model      precision     alpha          similarity    
+    ____________    ________    _________    ________    __________________
+
+    [  484.4132]    'large'     'single'     [0.1000]    'Tfunction'       
+    [1.8135e+04]    'large'     'single'     [0.1000]    'euclidean'       
+    [1.8101e+04]    'large'     'single'     [0.1000]    'squaredeuclidean'
+    [1.8366e+04]    'large'     'single'     [0.1000]    'seuclidean'      
+    [1.8150e+04]    'large'     'single'     [0.1000]    'cityblock'       
+    [1.8234e+04]    'large'     'single'     [0.1000]    'chebychev'       
+    [4.5049e+03]    'large'     'single'     [0.1000]    'cosine'          
+    [4.6709e+03]    'large'     'single'     [0.1000]    'correlation'     
+    [  291.7367]    'large'     'single'     [0.2000]    'Tfunction'       
+    [8.7685e+03]    'large'     'single'     [0.2000]    'euclidean'       
+    [8.7681e+03]    'large'     'single'     [0.2000]    'squaredeuclidean'
+    [8.8871e+03]    'large'     'single'     [0.2000]    'seuclidean'      
+    [8.7724e+03]    'large'     'single'     [0.2000]    'cityblock'       
+    [8.8178e+03]    'large'     'single'     [0.2000]    'chebychev'       
+    [2.1412e+03]    'large'     'single'     [0.2000]    'cosine'          
+    [2.2444e+03]    'large'     'single'     [0.2000]    'correlation'     
+    [  182.8141]    'large'     'single'     [0.3000]    'Tfunction'       
+    [5.6415e+03]    'large'     'single'     [0.3000]    'euclidean'       
+    [5.6284e+03]    'large'     'single'     [0.3000]    'squaredeuclidean'
+    [5.6984e+03]    'large'     'single'     [0.3000]    'seuclidean'      
+    [5.6409e+03]    'large'     'single'     [0.3000]    'cityblock'       
+    [5.6634e+03]    'large'     'single'     [0.3000]    'chebychev'       
+    [1.4033e+03]    'large'     'single'     [0.3000]    'cosine'          
+    [1.4361e+03]    'large'     'single'     [0.3000]    'correlation'     
+    [  959.8744]    'large'     'double'     [0.1000]    'Tfunction'       
+    [2.5298e+04]    'large'     'double'     [0.1000]    'euclidean'       
+    [2.5304e+04]    'large'     'double'     [0.1000]    'squaredeuclidean'
+    [2.6027e+04]    'large'     'double'     [0.1000]    'seuclidean'      
+    [2.5416e+04]    'large'     'double'     [0.1000]    'cityblock'       
+    [2.5622e+04]    'large'     'double'     [0.1000]    'chebychev'       
+    [8.8242e+03]    'large'     'double'     [0.1000]    'cosine'          
+    [9.2415e+03]    'large'     'double'     [0.1000]    'correlation'     
+    [  494.8352]    'large'     'double'     [0.2000]    'Tfunction'       
+    [1.2225e+04]    'large'     'double'     [0.2000]    'euclidean'       
+    [1.2243e+04]    'large'     'double'     [0.2000]    'squaredeuclidean'
+    [1.2647e+04]    'large'     'double'     [0.2000]    'seuclidean'      
+    [1.2303e+04]    'large'     'double'     [0.2000]    'cityblock'       
+    [1.2478e+04]    'large'     'double'     [0.2000]    'chebychev'       
+    [4.4485e+03]    'large'     'double'     [0.2000]    'cosine'          
+    [4.4834e+03]    'large'     'double'     [0.2000]    'correlation'     
+    [  334.8433]    'large'     'double'     [0.3000]    'Tfunction'       
+    [7.9068e+03]    'large'     'double'     [0.3000]    'euclidean'       
+    [7.9017e+03]    'large'     'double'     [0.3000]    'squaredeuclidean'
+    [8.1294e+03]    'large'     'double'     [0.3000]    'seuclidean'      
+    [7.8813e+03]    'large'     'double'     [0.3000]    'cityblock'       
+    [7.9630e+03]    'large'     'double'     [0.3000]    'chebychev'       
+    [2.7285e+03]    'large'     'double'     [0.3000]    'cosine'          
+    [2.8644e+03]    'large'     'double'     [0.3000]    'correlation'     
+    [  134.2046]    'medium'    'single'     [0.1000]    'Tfunction'       
+    [3.3462e+03]    'medium'    'single'     [0.1000]    'euclidean'       
+    [3.3087e+03]    'medium'    'single'     [0.1000]    'squaredeuclidean'
+    [3.3242e+03]    'medium'    'single'     [0.1000]    'seuclidean'      
+    [3.3678e+03]    'medium'    'single'     [0.1000]    'cityblock'       
+    [3.3447e+03]    'medium'    'single'     [0.1000]    'chebychev'       
+    [1.0172e+03]    'medium'    'single'     [0.1000]    'cosine'          
+    [1.0561e+03]    'medium'    'single'     [0.1000]    'correlation'     
+    [   73.9262]    'medium'    'single'     [0.2000]    'Tfunction'       
+    [1.5958e+03]    'medium'    'single'     [0.2000]    'euclidean'       
+    [1.6162e+03]    'medium'    'single'     [0.2000]    'squaredeuclidean'
+    [1.5840e+03]    'medium'    'single'     [0.2000]    'seuclidean'      
+    [1.6505e+03]    'medium'    'single'     [0.2000]    'cityblock'       
+    [1.6182e+03]    'medium'    'single'     [0.2000]    'chebychev'       
+    [  489.4407]    'medium'    'single'     [0.2000]    'cosine'          
+    [  489.6180]    'medium'    'single'     [0.2000]    'correlation'     
+    [   53.0292]    'medium'    'single'     [0.3000]    'Tfunction'       
+    [1.0436e+03]    'medium'    'single'     [0.3000]    'euclidean'       
+    [  996.6227]    'medium'    'single'     [0.3000]    'squaredeuclidean'
+    [1.0152e+03]    'medium'    'single'     [0.3000]    'seuclidean'      
+    [1.0471e+03]    'medium'    'single'     [0.3000]    'cityblock'       
+    [1.0591e+03]    'medium'    'single'     [0.3000]    'chebychev'       
+    [  311.6830]    'medium'    'single'     [0.3000]    'cosine'          
+    [  313.3085]    'medium'    'single'     [0.3000]    'correlation'     
+    [  247.5100]    'medium'    'double'     [0.1000]    'Tfunction'       
+    [4.4745e+03]    'medium'    'double'     [0.1000]    'euclidean'       
+    [4.4232e+03]    'medium'    'double'     [0.1000]    'squaredeuclidean'
+    [4.5367e+03]    'medium'    'double'     [0.1000]    'seuclidean'      
+    [4.5152e+03]    'medium'    'double'     [0.1000]    'cityblock'       
+    [4.4866e+03]    'medium'    'double'     [0.1000]    'chebychev'       
+    [2.0197e+03]    'medium'    'double'     [0.1000]    'cosine'          
+    [2.0183e+03]    'medium'    'double'     [0.1000]    'correlation'     
+    [  130.2558]    'medium'    'double'     [0.2000]    'Tfunction'       
+    [2.1440e+03]    'medium'    'double'     [0.2000]    'euclidean'       
+    [2.1448e+03]    'medium'    'double'     [0.2000]    'squaredeuclidean'
+    [2.1663e+03]    'medium'    'double'     [0.2000]    'seuclidean'      
+    [2.2078e+03]    'medium'    'double'     [0.2000]    'cityblock'       
+    [2.1734e+03]    'medium'    'double'     [0.2000]    'chebychev'       
+    [  966.7880]    'medium'    'double'     [0.2000]    'cosine'          
+    [  959.2034]    'medium'    'double'     [0.2000]    'correlation'     
+    [   95.4219]    'medium'    'double'     [0.3000]    'Tfunction'       
+    [1.4242e+03]    'medium'    'double'     [0.3000]    'euclidean'       
+    [1.3304e+03]    'medium'    'double'     [0.3000]    'squaredeuclidean'
+    [1.3853e+03]    'medium'    'double'     [0.3000]    'seuclidean'      
+    [1.3945e+03]    'medium'    'double'     [0.3000]    'cityblock'       
+    [1.4271e+03]    'medium'    'double'     [0.3000]    'chebychev'       
+    [  637.4193]    'medium'    'double'     [0.3000]    'cosine'          
+    [  608.5840]    'medium'    'double'     [0.3000]    'correlation'     
+    [    0.4019]    'small'     'single'     [0.1000]    'Tfunction'       
+    [    7.0473]    'small'     'single'     [0.1000]    'euclidean'       
+    [    6.9120]    'small'     'single'     [0.1000]    'squaredeuclidean'
+    [    7.0606]    'small'     'single'     [0.1000]    'seuclidean'      
+    [    6.9677]    'small'     'single'     [0.1000]    'cityblock'       
+    [    7.2126]    'small'     'single'     [0.1000]    'chebychev'       
+    [    2.6416]    'small'     'single'     [0.1000]    'cosine'          
+    [    2.8455]    'small'     'single'     [0.1000]    'correlation'     
+    [    0.1930]    'small'     'single'     [0.2000]    'Tfunction'       
+    [    3.4245]    'small'     'single'     [0.2000]    'euclidean'       
+    [    3.3198]    'small'     'single'     [0.2000]    'squaredeuclidean'
+    [    3.4362]    'small'     'single'     [0.2000]    'seuclidean'      
+    [    3.4312]    'small'     'single'     [0.2000]    'cityblock'       
+    [    3.4856]    'small'     'single'     [0.2000]    'chebychev'       
+    [    1.3019]    'small'     'single'     [0.2000]    'cosine'          
+    [    1.3331]    'small'     'single'     [0.2000]    'correlation'     
+    [    0.1385]    'small'     'single'     [0.3000]    'Tfunction'       
+    [    2.2344]    'small'     'single'     [0.3000]    'euclidean'       
+    [    2.1347]    'small'     'single'     [0.3000]    'squaredeuclidean'
+    [    2.2092]    'small'     'single'     [0.3000]    'seuclidean'      
+    [    2.1449]    'small'     'single'     [0.3000]    'cityblock'       
+    [    2.2854]    'small'     'single'     [0.3000]    'chebychev'       
+    [    0.8587]    'small'     'single'     [0.3000]    'cosine'          
+    [    0.8908]    'small'     'single'     [0.3000]    'correlation'     
+    [    0.6043]    'small'     'double'     [0.1000]    'Tfunction'       
+    [    8.0401]    'small'     'double'     [0.1000]    'euclidean'       
+    [    7.9234]    'small'     'double'     [0.1000]    'squaredeuclidean'
+    [    8.0068]    'small'     'double'     [0.1000]    'seuclidean'      
+    [    7.9622]    'small'     'double'     [0.1000]    'cityblock'       
+    [    8.2493]    'small'     'double'     [0.1000]    'chebychev'       
+    [    3.6261]    'small'     'double'     [0.1000]    'cosine'          
+    [    3.9108]    'small'     'double'     [0.1000]    'correlation'     
+    [    0.3169]    'small'     'double'     [0.2000]    'Tfunction'       
+    [    3.8873]    'small'     'double'     [0.2000]    'euclidean'       
+    [    3.7658]    'small'     'double'     [0.2000]    'squaredeuclidean'
+    [    3.8650]    'small'     'double'     [0.2000]    'seuclidean'      
+    [    3.9034]    'small'     'double'     [0.2000]    'cityblock'       
+    [    3.9805]    'small'     'double'     [0.2000]    'chebychev'       
+    [    1.8118]    'small'     'double'     [0.2000]    'cosine'          
+    [    1.8855]    'small'     'double'     [0.2000]    'correlation'     
+    [    0.2261]    'small'     'double'     [0.3000]    'Tfunction'       
+    [    2.5436]    'small'     'double'     [0.3000]    'euclidean'       
+    [    2.4211]    'small'     'double'     [0.3000]    'squaredeuclidean'
+    [    2.4816]    'small'     'double'     [0.3000]    'seuclidean'      
+    [    2.4315]    'small'     'double'     [0.3000]    'cityblock'       
+    [    2.5986]    'small'     'double'     [0.3000]    'chebychev'       
+    [    1.1971]    'small'     'double'     [0.3000]    'cosine'          
+    [    1.2079]    'small'     'double'     [0.3000]    'correlation'     
+

@@ -15,7 +15,7 @@ nExps  = length(exp_files)*length(precisions)*length(similarityMetrics)...
     *length(alphas);
 k=0; % benchmark iterator
 computing = 'cpu';
-hardware  = 'cpu2';
+hardware  = 'cpu1';
 %%
 % dry run to compile 
 fprintf('Performing dry run to compile libraries \n');
