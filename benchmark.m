@@ -33,7 +33,7 @@ AgNet = panda_run(lib_path,exp_file, motif_file, ppi_file, panda_out,...
             'Tfunction', computing, 'single', 0);
 %%
 %prepare results table
-resTable = array2table(zeros(0,5));
+resTable = cell2table(cell(1,5));
 resTable.Properties.VariableNames = {'runtime','model','precision','alpha','similarity'};
 %%
 fprintf('Starting benchmarks \n');
@@ -69,10 +69,10 @@ for i=1:length(exp_files)% loop through models
                         computing, precision{1}, 0, saveMemory);runtime=toc; 
                     catch ME
                         resTable.runtime{k}   = NaN;
-                        resTable.model{k}     = NaN;
-                        resTable.precision{k} = NaN;
-                        resTable.alpha{k}     = NaN;
-                        resTable.similarity{k}= NaN; 
+                        resTable.model{k}     = model_alias{i};
+                        resTable.precision{k} = precision{1};
+                        resTable.alpha{k}     = alpha;
+                        resTable.similarity{k}= similarityMetric{1}; 
                         display('computation failed \n')   
                         continue
                     end
