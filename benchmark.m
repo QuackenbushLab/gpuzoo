@@ -14,8 +14,8 @@ alphas = [0.1,0.2,0.3];
 nExps  = length(exp_files)*length(precisions)*length(similarityMetrics)...
     *length(alphas);
 k=0; % benchmark iterator
-computing = 'cpu';
-hardware  = 'cpu1';
+computing = 'gpu';
+hardware  = 'gpu1';
 %%
 % dry run to compile 
 fprintf('Performing dry run to compile libraries \n');
@@ -58,8 +58,25 @@ for i=1:length(exp_files)% loop through models
                 GeneCoReg = NormalizeNetwork(GeneCoReg);
                 TFCoop    = NormalizeNetwork(TFCoop);
                 % run panda and measure runtime
-                tic;AgNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
-                    computing, precision{1}, 0);runtime=toc;
+                try
+                    saveMemory=0;
+                    tic;AgNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
+                        computing, precision{1}, 0, saveMemory);runtime=toc;
+                catch ME
+                    try
+                        saveMemory=1;
+                        tic;AgNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
+                        computing, precision{1}, 0, saveMemory);runtime=toc; 
+                    catch ME
+                        resTable.runtime{k}   = NaN;
+                        resTable.model{k}     = NaN;
+                        resTable.precision{k} = NaN;
+                        resTable.alpha{k}     = NaN;
+                        resTable.similarity{k}= NaN; 
+                        display('computation failed \n')   
+                        continue
+                    end
+                end
                 resTable.runtime{k}   = runtime;
                 resTable.model{k}     = model_alias{i};
                 resTable.precision{k} = precision{1};
