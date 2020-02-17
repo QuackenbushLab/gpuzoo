@@ -1,0 +1,321 @@
+
+                                               < M A T L A B (R) >
+                                     Copyright 1984-2019 The MathWorks, Inc.
+                                     R2019a (9.6.0.1072779) 64-bit (glnxa64)
+                                                  March 8, 2019
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Performing dry run to compile libraries 
+07-Feb-2020 05:44:11
+Input expression file: test_data/expression.txt
+Input motif file: test_data/motifTest.txt
+Input PPI file: test_data/ppi.txt
+Output PANDA network: 
+Output temp data: 
+Alpha: 0.10
+Reading in expression data!
+1000 genes and 50 conditions!
+Elapsed time is 1.481405 seconds.
+Reading in motif data!
+Reading in ppi data!
+661 TFs and 103400 edges!
+Computing coexpression network:
+Elapsed time is 0.159693 seconds.
+Normalizing Networks:
+Elapsed time is 0.097781 seconds.
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 1000 Genes and 661 TFs took 2.131930 seconds!
+All done!
+07-Feb-2020 05:44:16
+Starting benchmarks 
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.916227 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 43698 Genes and 1603 TFs took 2095.658971 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.757709 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 55041.343188 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.756760 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 57510.919767 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.810829 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 61235.467664 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.704597 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 43698 Genes and 1603 TFs took 55646.502969 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.670233 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 43698 Genes and 1603 TFs took 53117.179591 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.712811 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 43698 Genes and 1603 TFs took 24872.676816 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.699755 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 43698 Genes and 1603 TFs took 26730.567525 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.763712 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 43698 Genes and 1603 TFs took 1170.247119 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.893207 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 34381.440384 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.718588 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 32351.873331 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.693057 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 28872.335572 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.685358 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 43698 Genes and 1603 TFs took 26962.355844 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.681363 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 43698 Genes and 1603 TFs took 27647.734992 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.685385 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 43698 Genes and 1603 TFs took 11628.031310 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.814904 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 43698 Genes and 1603 TFs took 12418.333107 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.721472 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 43698 Genes and 1603 TFs took 813.887808 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.682945 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 21960.246912 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.699668 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 22191.327091 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.703515 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with seuclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 19227.757539 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.693178 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cityblock !
+Running PANDA on 43698 Genes and 1603 TFs took 21201.077410 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.701117 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with chebychev !
+Running PANDA on 43698 Genes and 1603 TFs took 21538.252735 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.689692 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with cosine !
+Running PANDA on 43698 Genes and 1603 TFs took 7224.519306 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.680087 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with correlation !
+Running PANDA on 43698 Genes and 1603 TFs took 7623.983332 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.679516 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with Tfunction !
+Running PANDA on 43698 Genes and 1603 TFs took 4910.033692 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.673999 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with euclidean !
+Running PANDA on 43698 Genes and 1603 TFs took 141650.155818 seconds!
+Reading in expression data!
+35238 genes and 97 conditions!
+Elapsed time is 0.726731 seconds.
+Reading in motif data!
+Reading in ppi data!
+1603 TFs and 43519847 edges!
+Computing coexpression network:
+Normalizing Networks:
+Learning Network with squaredeuclidean !
+{Operation terminated by user during pdist2 (line 379)
+
+
+In PANDA (line 100)
+                A = pdist2(GeneCoReg,RegNet,similarityMetric);
+
+In benchmark (line 60)
+                tic;AgNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
+} 
+{Operation terminated by user during pdist2 (line 379)
+
+
+In PANDA (line 100)
+                A = pdist2(GeneCoReg,RegNet,similarityMetric);
+
+In benchmark (line 60)
+                tic;AgNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
+} 
