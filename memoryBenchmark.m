@@ -1,7 +1,7 @@
 exp_file   = 'test_data/expression.txt';
 motif_file = 'test_data/motifTest.txt';
 ppi_file   = 'test_data/ppi.txt';
-
+modeProcess='union';
 [Exp,RegNet,TFCoop,TFNames,GeneNames]=processData(exp_file,motif_file,ppi_file,modeProcess);
 
 disp('Computing coexpression network:');
@@ -16,9 +16,9 @@ toc
 
 disp('Running PANDA algorithm:');
 verbose=0;precision='double';computing='cpu';similarityMetric='Tfunction';
-respWeight=0.5;alpha=0.1;
+respWeight=0.5;alpha=0.1;saveMemory=1;
 [AgNet,gpuImpl] = gpuPANDA(RegNet, GeneCoReg, TFCoop, alpha, respWeight,...
-    similarityMetric, computing, precision, verbose);
+    similarityMetric, computing, precision, verbose, saveMemory);
 
 [AgNet,cpuImpl] = PANDA(RegNet, GeneCoReg, TFCoop, alpha, respWeight,...
     similarityMetric, computing, precision, verbose);
@@ -32,5 +32,6 @@ gpuRes=gpuMem-gpuMem(1);
 figure;
 hold on
 diffMem=cpuRes./gpuRes;
-bar(diffMem(2:end))
-ylim([0 2])
+diffMem(1)=1;
+bar(diffMem)
+ylim([0 3])
