@@ -1,21 +1,21 @@
 addpath(genpath('../netZooM'))
 addpath(genpath('../gibbon'))
 % Experimental setup
-model_alias= {'large','medium','small'};
-exp_files  = {'THP-1.tsv','Hugo_exp1_lcl.txt','Hugo_exp1_lcl.txt'};
-motif_files= {'motif_complete_reduced.txt','Hugo_motifCellLine.txt','Hugo_motifCellLine_reduced.txt'};
-ppi_files  = {'ppi_complete.txt','ppi2015_freezeCellLine.txt','ppi2015_freezeCellLine.txt'};
+model_alias= {'medium','small'};
+exp_files  = {'Hugo_exp1_lcl.txt','Hugo_exp1_lcl.txt'};
+motif_files= {'Hugo_motifCellLine.txt','Hugo_motifCellLine_reduced.txt'};
+ppi_files  = {'ppi2015_freezeCellLine.txt','ppi2015_freezeCellLine.txt'};
 precisions = {'single','double'};
 similarityMetrics = {'Tfunction','euclidean',...
     'squaredeuclidean','seuclidean','cityblock','chebychev','cosine',...
     'correlation'};%took out minkowski
-modeProcesses = {'union','union','intersection'};
+modeProcesses = {'union','intersection'};
 alphas = [0.1,0.2,0.3];
 nExps  = length(exp_files)*length(precisions)*length(similarityMetrics)...
     *length(alphas);
 k=0; % benchmark iterator
-computing = 'gpu';
-hardware  = 'gpu1';
+computing = 'cpu';
+hardware  = 'cpu2';
 %%
 % dry run to compile 
 fprintf('Performing dry run to compile libraries \n');
