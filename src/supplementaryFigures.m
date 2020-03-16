@@ -46,7 +46,7 @@ for i=1:length(exp_files)% loop through models
                         computing, 'single', 0, saveMemory);
             AgNet2 = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
                         computing, 'double', 0, saveMemory);
-            diffNet=max(abs(AgNet1(:)-AgNet2(:)));
+            diffNet=max(abs(double(AgNet1(:))-double(AgNet2(:))));
             resTable.logDiff{k}   = -log10(diffNet);
             resTable.model{k}     = model_alias{i};
             resTable.alpha{k}     = alpha;
@@ -55,6 +55,18 @@ for i=1:length(exp_files)% loop through models
     end
 end
 writetable(resTable,[computing '_' hardware '_resTable_logDiff.csv']);
+%plot
+tbl=readtable('cpu_cpu1_resTable_logDiff.csv');
+figure;
+subplot(1,3,1)
+bar(reshape(tbl.logDiff(1:8*3),[8 3]))
+xticklabels(tbl.similarity(1:8))
+subplot(1,3,2)
+bar(reshape(tbl.logDiff((8*3)+1:8*6),[8 3]))
+xticklabels(tbl.similarity(1:8))
+subplot(1,3,3)
+bar(reshape(tbl.logDiff((8*6)+1:end),[8 3]))
+xticklabels(tbl.similarity(1:8))
 %%
 %Figure S2 - Differences between PANDA and gpuPANDA
 addpath(genpath('../netZooM'))
