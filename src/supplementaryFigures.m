@@ -129,3 +129,8 @@ for precision = precisions
     end
 end
 set(gca,'fontname','arial') 
+%%
+%Figure S2 - Runtime difference between LIONESS and gpuLIONESS
+addpath(genpath('../netZooM'))
+addpath(genpath('../gibbon'))
+addpath(genpath('../gpupanda'))
