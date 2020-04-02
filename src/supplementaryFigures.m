@@ -130,7 +130,48 @@ for precision = precisions
 end
 set(gca,'fontname','arial') 
 %%
-%Figure S2 - Runtime difference between LIONESS and gpuLIONESS
+%Figure S3 - Runtime difference between LIONESS and gpuLIONESS
 addpath(genpath('../netZooM'))
 addpath(genpath('../gibbon'))
 addpath(genpath('../gpupanda'))
+% Experimental setup
+exp_file   = 'Hugo_exp1_lcl.txt';
+motif_file = 'Hugo_motifCellLine_reduced.txt';
+ppi_file   = 'ppi2015_freezeCellLine.txt';
+similarityMetrics = {'Tfunction','euclidean',...
+    'squaredeuclidean','seuclidean','cityblock','chebychev','cosine',...
+    'correlation'};
+modeProcess = 'intersection';
+alpha = 0.1;
+START=1; %only first sample
+END  =1; %only first sample
+computings = {'cpu','gpu'};
+precisions  = {'double','single'};
+resCell    = cell(length(computings),length(precision),length(similarityMetrics));
+%%
+fprintf('Starting benchmarks \n');
+l=0; % benchmark iterator
+for computing = computings
+    l=l+1;m=0;
+    for precision = precisions
+        m=m+1;k=0;
+        for similarityMetric = similarityMetrics % loop through distances
+                k=k+1;
+                [Exp,RegNet,TFCoop,TFNames,GeneNames]=processData(exp_file,motif_file,ppi_file,modeProcess);
+                disp('Computing coexpression network:');
+                GeneCoReg = Coexpression(Exp);
+                %%
+                disp('Normalizing Networks:');
+                RegNet    = NormalizeNetwork(RegNet);
+                GeneCoReg = NormalizeNetwork(GeneCoReg);
+                TFCoop    = NormalizeNetwork(TFCoop);
+                % run panda and measure runtime
+                saveMemory=0;
+                tic;AgNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
+                        computing{1}, precision{1}, 0, saveMemory);runtime=toc;
+                resCell{l,m,k}=AgNet;
+        end
+    end
+end
+%save
+save('resCell.mat','resCell')
