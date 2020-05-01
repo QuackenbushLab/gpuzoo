@@ -78,15 +78,13 @@ for i=1:length(exp_files)% loop through models
                         if isequal(computing,'gpu')
                             Exp=gpuArray(Exploop);
                             GeneCoReg = Coexpression(Exp(idx,:));
+                            GeneCoReg = gather(GeneCoReg);
                         else
                             GeneCoReg = Coexpression(Exp(idx,:));
                         end
 
                         disp('Normalizing Networks:');
                         GeneCoReg = NormalizeNetwork(GeneCoReg);
-                        if isequal(computing,'gpu')
-                            GeneCoReg = gather(GeneCoReg);
-                        end
 
                         disp('Running PANDA algorithm:');
                         
@@ -108,6 +106,7 @@ for i=1:length(exp_files)% loop through models
                             if isequal(computing,'gpu')
                                 Exp=gpuArray(Exploop);
                                 GeneCoReg = Coexpression(Exp(idx,:));
+                                GeneCoReg = gather(GeneCoReg);
                             else
                                 GeneCoReg = Coexpression(Exp(idx,:));
                             end
@@ -115,9 +114,6 @@ for i=1:length(exp_files)% loop through models
                             disp('Normalizing Networks:');
                             GeneCoReg = NormalizeNetwork(GeneCoReg);
 
-                            if isequal(computing,'gpu')
-                                GeneCoReg = gather(GeneCoReg);
-                            end
                             disp('Running PANDA algorithm:');
                             LocNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
                             computing, precision{1}, 0, saveMemory); 
