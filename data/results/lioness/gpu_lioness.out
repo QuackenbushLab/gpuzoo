@@ -841,3 +841,20 @@ resTable =
 
     [5.1908e+03]    'medium'    'single'     [0.1000]    'Tfunction'
 
+{Undefined function or variable 'PredNet'.
+} 
+
+Your variables are:
+
+AgNet              computing          modeProcesses      precisions         
+Exp                exp_file           model_alias        resTable           
+Exploop            exp_file1          motif_file         runtime            
+GeneNames          exp_files          motif_file1        saveMemory         
+NumConditions      hardware           motif_files        save_pairs         
+NumGenes           i                  nExps              save_temp          
+RegNet             indexes            panda_out          similarityMetric   
+TFCoop             jj                 ppi_file           similarityMetrics  
+TFNames            k                  ppi_file1          t0                 
+alpha              lib_path           ppi_files          
+alphas             modeProcess        precision          
+
