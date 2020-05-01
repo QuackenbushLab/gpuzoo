@@ -70,9 +70,9 @@ for i=1:length(exp_files)% loop through models
                 try
                     saveMemory=1;
                     tic;
-                    for i = indexes
-                        fprintf('Running LIONESS for sample %d:\n', i);
-                        idx = [1:(i-1), (i+1):NumConditions];  % all samples except i
+                    for jj = indexes
+                        fprintf('Running LIONESS for sample %d:\n', jj);
+                        idx = [1:(jj-1), (jj+1):NumConditions];  % all samples except i
 
                         disp('Computing coexpresison network:');
                         GeneCoReg = Coexpression(Exp(idx,:));
@@ -93,9 +93,9 @@ for i=1:length(exp_files)% loop through models
                     try
                         saveMemory=0;
                         tic;
-                        for i = indexes
-                            fprintf('Running LIONESS for sample %d:\n', i);
-                            idx = [1:(i-1), (i+1):NumConditions];  % all samples except i
+                        for jj = indexes
+                            fprintf('Running LIONESS for sample %d:\n', jj);
+                            idx = [1:(jj-1), (jj+1):NumConditions];  % all samples except i
 
                             disp('Computing coexpresison network:');
                             GeneCoReg = Coexpression(Exp(idx,:));
