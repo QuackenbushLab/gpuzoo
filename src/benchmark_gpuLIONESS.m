@@ -1,6 +1,7 @@
 % Comparing gpuLIONESS in GPU1 and LIONESS in CPU2, both in serial runs 
 % (meaning that no parallelization over the samples)
 addpath(genpath('../../netZooM'))
+addpath(genpath('../../gpuPANDA'))
 %%
 % First, fetch the data from GRANDdb (https://grand.networkmedicine.org)
 % In the terminal please type (after installing awscli)
