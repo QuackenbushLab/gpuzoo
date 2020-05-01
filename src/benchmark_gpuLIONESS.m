@@ -56,6 +56,9 @@ for i=1:length(exp_files)% loop through models
                         similarityMetric{1}, computing, precision{1}, 0);
                 k=k+1;
                 [Exp,RegNet,TFCoop,TFNames,GeneNames]=processData(exp_file,motif_file,ppi_file,modeProcess);
+                if isequal(computing,'gpu')
+                    Exp=gpuArray(Exp)
+                end
                 disp('Reading in expression data!');
                 [NumConditions, NumGenes] = size(Exp);  % transposed expression
                 fprintf('%d genes and %d conditions!\n', NumGenes, NumConditions);
