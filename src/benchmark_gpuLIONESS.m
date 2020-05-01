@@ -11,13 +11,13 @@ addpath(genpath('../../gpupanda'))
 %  aws s3 cp s3://granddb/optPANDA/expression/Hugo_exp1_lcl.txt .
 %%
 % Experimental setup
-model_alias= {'small'};
+model_alias= {'medium'};
 exp_files  = {'Hugo_exp1_lcl.txt'};
-motif_files= {'Hugo_motifCellLine_reduced.txt'};
+motif_files= {'Hugo_motifCellLine.txt'};
 ppi_files  = {'ppi2015_freezeCellLine.txt'};
 precisions = {'single','double'};
 similarityMetrics = {'Tfunction'};%took out minkowski
-modeProcesses = {'intersection'};
+modeProcesses = {'union'};
 alphas = [0.1];
 nExps  = length(exp_files)*length(precisions)*length(similarityMetrics)...
     *length(alphas);
@@ -68,7 +68,7 @@ for i=1:length(exp_files)% loop through models
                 %%
                 % run panda and measure runtime
                 try
-                    t0=tic;saveMemory=1;
+                    t0=tic;saveMemory=0;
                     for jj = indexes
                         fprintf('Running LIONESS for sample %d:\n', jj);
                         idx = [1:(jj-1), (jj+1):NumConditions];  % all samples except i
