@@ -68,7 +68,7 @@ for i=1:length(exp_files)% loop through models
                 %%
                 % run panda and measure runtime
                 try
-                    tic;saveMemory=1;
+                    t0=tic;saveMemory=1;
                     for jj = indexes
                         fprintf('Running LIONESS for sample %d:\n', jj);
                         idx = [1:(jj-1), (jj+1):NumConditions];  % all samples except i
@@ -87,10 +87,10 @@ for i=1:length(exp_files)% loop through models
 
                         clear idx GeneCoReg LocNet PredNet f; % clean up for next run
                     end
-                    runtime=toc; 
+                    runtime=toc(t0); 
                 catch ME
                     try
-                        tic;saveMemory=0;
+                        t0=tic;saveMemory=0;
                         for jj = indexes
                             fprintf('Running LIONESS for sample %d:\n', jj);
                             idx = [1:(jj-1), (jj+1):NumConditions];  % all samples except i
@@ -108,7 +108,7 @@ for i=1:length(exp_files)% loop through models
 
                            clear idx GeneCoReg LocNet PredNet f; % clean up for next run
                         end
-                        runtime=toc; 
+                        runtime=toc(t0); 
                     catch ME
                         resTable.runtime{k}   = NaN;
                         resTable.model{k}     = model_alias{i};
