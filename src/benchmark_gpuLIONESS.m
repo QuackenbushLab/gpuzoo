@@ -105,6 +105,7 @@ for i=1:length(exp_files)% loop through models
                                 Exp=gpuArray(Exp);
                                 GeneCoReg = Coexpression(Exp(idx,:));
                                 GeneCoReg = gather(GeneCoReg);
+                                Exp = gather(Exp);
                             end
 
                             disp('Normalizing Networks:');
