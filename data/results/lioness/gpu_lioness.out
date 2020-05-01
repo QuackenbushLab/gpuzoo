@@ -1,0 +1,843 @@
+
+                                    < M A T L A B (R) >
+                          Copyright 1984-2019 The MathWorks, Inc.
+                          R2019a (9.6.0.1072779) 64-bit (glnxa64)
+                                       March 8, 2019
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Performing dry run to compile libraries 
+01-May-2020 09:18:19
+Input expression file: test_data/expression.txt
+Input motif file: test_data/motifTest.txt
+Input PPI file: test_data/ppi.txt
+Output PANDA network: 
+Output temp data: 
+Alpha: 0.10
+[Warning: Name is nonexistent or not a directory: /home/ubuntu/gpupanda/src/../netZooM] 
+[> In path (line 109)
+  In addpath (line 86)
+  In panda_run (line 119)
+  In benchmark_gpuLIONESS (line 39)] 
+Reading in expression data!
+1000 genes and 50 conditions!
+Elapsed time is 1.606319 seconds.
+Reading in motif data!
+Reading in ppi data!
+661 TFs and 103400 edges!
+Computing coexpression network:
+Elapsed time is 0.194372 seconds.
+Normalizing Networks:
+Elapsed time is 0.123683 seconds.
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 1000 Genes and 661 TFs took 2.669430 seconds!
+All done!
+01-May-2020 09:18:27
+Starting benchmarks 
+01-May-2020 09:18:27
+Input expression file: Hugo_exp1_lcl.txt
+Input motif file: Hugo_motifCellLine.txt
+Input PPI file: ppi2015_freezeCellLine.txt
+Output PANDA network: 
+Output temp data: 
+Alpha: 0.10
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 1.252558 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Computing coexpression network:
+Elapsed time is 17.088798 seconds.
+Normalizing Networks:
+Elapsed time is 23.186169 seconds.
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.224678 seconds!
+All done!
+01-May-2020 09:21:11
+Reading in expression data!
+27149 genes and 127 conditions!
+Elapsed time is 1.135136 seconds.
+Reading in motif data!
+Reading in ppi data!
+652 TFs and 17701148 edges!
+Reading in expression data!
+27149 genes and 127 conditions!
+Reading in motif data!
+Reading in ppi data!
+Running LIONESS for sample 1:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.355786 seconds!
+Running LIONESS for sample 2:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.146301 seconds!
+Running LIONESS for sample 3:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.091290 seconds!
+Running LIONESS for sample 4:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.205397 seconds!
+Running LIONESS for sample 5:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.244518 seconds!
+Running LIONESS for sample 6:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.216504 seconds!
+Running LIONESS for sample 7:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.236799 seconds!
+Running LIONESS for sample 8:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.201255 seconds!
+Running LIONESS for sample 9:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.231319 seconds!
+Running LIONESS for sample 10:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.218513 seconds!
+Running LIONESS for sample 11:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.243888 seconds!
+Running LIONESS for sample 12:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.259967 seconds!
+Running LIONESS for sample 13:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.198056 seconds!
+Running LIONESS for sample 14:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.203920 seconds!
+Running LIONESS for sample 15:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.235281 seconds!
+Running LIONESS for sample 16:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.170336 seconds!
+Running LIONESS for sample 17:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.242332 seconds!
+Running LIONESS for sample 18:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.247518 seconds!
+Running LIONESS for sample 19:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.317850 seconds!
+Running LIONESS for sample 20:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.264971 seconds!
+Running LIONESS for sample 21:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.091972 seconds!
+Running LIONESS for sample 22:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.331088 seconds!
+Running LIONESS for sample 23:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.263468 seconds!
+Running LIONESS for sample 24:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.262749 seconds!
+Running LIONESS for sample 25:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.258559 seconds!
+Running LIONESS for sample 26:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.248389 seconds!
+Running LIONESS for sample 27:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.259891 seconds!
+Running LIONESS for sample 28:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.298311 seconds!
+Running LIONESS for sample 29:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.308144 seconds!
+Running LIONESS for sample 30:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.291594 seconds!
+Running LIONESS for sample 31:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.161951 seconds!
+Running LIONESS for sample 32:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.123008 seconds!
+Running LIONESS for sample 33:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.127204 seconds!
+Running LIONESS for sample 34:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.263765 seconds!
+Running LIONESS for sample 35:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.285784 seconds!
+Running LIONESS for sample 36:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.276366 seconds!
+Running LIONESS for sample 37:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.225188 seconds!
+Running LIONESS for sample 38:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.210934 seconds!
+Running LIONESS for sample 39:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.250566 seconds!
+Running LIONESS for sample 40:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.149855 seconds!
+Running LIONESS for sample 41:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.203375 seconds!
+Running LIONESS for sample 42:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.238678 seconds!
+Running LIONESS for sample 43:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.078747 seconds!
+Running LIONESS for sample 44:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.200831 seconds!
+Running LIONESS for sample 45:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.209917 seconds!
+Running LIONESS for sample 46:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.263634 seconds!
+Running LIONESS for sample 47:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.211446 seconds!
+Running LIONESS for sample 48:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.131342 seconds!
+Running LIONESS for sample 49:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.218140 seconds!
+Running LIONESS for sample 50:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.230716 seconds!
+Running LIONESS for sample 51:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.402042 seconds!
+Running LIONESS for sample 52:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.225079 seconds!
+Running LIONESS for sample 53:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.230670 seconds!
+Running LIONESS for sample 54:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.235752 seconds!
+Running LIONESS for sample 55:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.201503 seconds!
+Running LIONESS for sample 56:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.151911 seconds!
+Running LIONESS for sample 57:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.161793 seconds!
+Running LIONESS for sample 58:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.201408 seconds!
+Running LIONESS for sample 59:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.131128 seconds!
+Running LIONESS for sample 60:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.222428 seconds!
+Running LIONESS for sample 61:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.188247 seconds!
+Running LIONESS for sample 62:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.231798 seconds!
+Running LIONESS for sample 63:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.226473 seconds!
+Running LIONESS for sample 64:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.215753 seconds!
+Running LIONESS for sample 65:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.112870 seconds!
+Running LIONESS for sample 66:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.218411 seconds!
+Running LIONESS for sample 67:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.208054 seconds!
+Running LIONESS for sample 68:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.213137 seconds!
+Running LIONESS for sample 69:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.088942 seconds!
+Running LIONESS for sample 70:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.139414 seconds!
+Running LIONESS for sample 71:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.200627 seconds!
+Running LIONESS for sample 72:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.200909 seconds!
+Running LIONESS for sample 73:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.211997 seconds!
+Running LIONESS for sample 74:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.194920 seconds!
+Running LIONESS for sample 75:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.141897 seconds!
+Running LIONESS for sample 76:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.225849 seconds!
+Running LIONESS for sample 77:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.238856 seconds!
+Running LIONESS for sample 78:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.176016 seconds!
+Running LIONESS for sample 79:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.182051 seconds!
+Running LIONESS for sample 80:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.214574 seconds!
+Running LIONESS for sample 81:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.134744 seconds!
+Running LIONESS for sample 82:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.225994 seconds!
+Running LIONESS for sample 83:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.216317 seconds!
+Running LIONESS for sample 84:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.204615 seconds!
+Running LIONESS for sample 85:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.134410 seconds!
+Running LIONESS for sample 86:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.141731 seconds!
+Running LIONESS for sample 87:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.141675 seconds!
+Running LIONESS for sample 88:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.129505 seconds!
+Running LIONESS for sample 89:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.144120 seconds!
+Running LIONESS for sample 90:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.168370 seconds!
+Running LIONESS for sample 91:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.208734 seconds!
+Running LIONESS for sample 92:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.210854 seconds!
+Running LIONESS for sample 93:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.252722 seconds!
+Running LIONESS for sample 94:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.208045 seconds!
+Running LIONESS for sample 95:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.196091 seconds!
+Running LIONESS for sample 96:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.183816 seconds!
+Running LIONESS for sample 97:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.189655 seconds!
+Running LIONESS for sample 98:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.153627 seconds!
+Running LIONESS for sample 99:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.139372 seconds!
+Running LIONESS for sample 100:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.148248 seconds!
+Running LIONESS for sample 101:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.222993 seconds!
+Running LIONESS for sample 102:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.196401 seconds!
+Running LIONESS for sample 103:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.072935 seconds!
+Running LIONESS for sample 104:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.173554 seconds!
+Running LIONESS for sample 105:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.165595 seconds!
+Running LIONESS for sample 106:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.282504 seconds!
+Running LIONESS for sample 107:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.178053 seconds!
+Running LIONESS for sample 108:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.210091 seconds!
+Running LIONESS for sample 109:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.236092 seconds!
+Running LIONESS for sample 110:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.206582 seconds!
+Running LIONESS for sample 111:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.124070 seconds!
+Running LIONESS for sample 112:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.216314 seconds!
+Running LIONESS for sample 113:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.210619 seconds!
+Running LIONESS for sample 114:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.179354 seconds!
+Running LIONESS for sample 115:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.135257 seconds!
+Running LIONESS for sample 116:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.204154 seconds!
+Running LIONESS for sample 117:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.206461 seconds!
+Running LIONESS for sample 118:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.163729 seconds!
+Running LIONESS for sample 119:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.193662 seconds!
+Running LIONESS for sample 120:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.202953 seconds!
+Running LIONESS for sample 121:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.160505 seconds!
+Running LIONESS for sample 122:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.129026 seconds!
+Running LIONESS for sample 123:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.214524 seconds!
+Running LIONESS for sample 124:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.253548 seconds!
+Running LIONESS for sample 125:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.154089 seconds!
+Running LIONESS for sample 126:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.127339 seconds!
+Running LIONESS for sample 127:
+Computing coexpression network:
+Normalizing Networks:
+Running PANDA algorithm:
+Learning Network with Tfunction !
+Running PANDA on 27149 Genes and 652 TFs took 12.164705 seconds!
+
+resTable =
+
+  1x5 table
+
+      runtime        model      precision     alpha      similarity 
+    ____________    ________    _________    ________    ___________
+
+    [5.1908e+03]    'medium'    'single'     [0.1000]    'Tfunction'
+
