@@ -1,6 +1,14 @@
 % Comparing gpuLIONESS in GPU1 and LIONESS in CPU2, both in serial runs 
 % (meaning that no parallelization over the samples)
 addpath(genpath('../netZooM'))
+%%
+% First, fetch the data from GRANDdb (https://grand.networkmedicine.org)
+% In the terminal please type (after installing awscli)
+%  cd gpupanda
+%  aws s3 cp s3://granddb/gpuPANDA/Hugo_motifCellLine_reduced.txt .
+%  aws s3 cp s3://granddb/gpuPANDA/ppi2015_freezeCellLine.txt .
+%  aws s3 cp s3://granddb/optPANDA/expression/Hugo_exp1_lcl.txt .
+%%
 % Experimental setup
 model_alias= {'small'};
 exp_files  = {'Hugo_exp1_lcl.txt'};
@@ -122,4 +130,4 @@ for i=1:length(exp_files)% loop through models
     end
 end
 
-writetable(resTable,[computing '_' hardware '_resTable.csv']);
+writetable(resTable,['LIONESS_' computing '_' hardware '_resTable.csv']);
