@@ -18,16 +18,16 @@ hardware  = 'cpu2';
 %%
 % dry run to compile 
 fprintf('Performing dry run to compile libraries \n');
-exp_file   = 'test_data/expression.txt';
-motif_file = 'test_data/motifTest.txt';
-ppi_file   = 'test_data/ppi.txt';
+exp_file1   = 'test_data/expression.txt';
+motif_file1 = 'test_data/motifTest.txt';
+ppi_file1   = 'test_data/ppi.txt';
 panda_out  = '';  % optional, leave empty if file output is not required
 save_temp  = '';  % optional, leave empty if temp data files will not be needed afterward
 lib_path   = '../netZooM';  % path to the folder of PANDA source code
 alpha      = 0.1;
 save_pairs = 0;%saving in .pairs format
 modeProcess= 'intersection';
-AgNet = panda_run(lib_path,exp_file, motif_file, ppi_file, panda_out,...
+AgNet = panda_run(lib_path,exp_file1, motif_file1, ppi_file1, panda_out,...
             save_temp, alpha, save_pairs, 'intersection',0.5, 0,...
             'Tfunction', computing, 'single', 0);
 %%
@@ -40,21 +40,20 @@ for i=1:length(exp_files)% loop through models
     for precision = precisions % loop through precisions
         for alpha = alphas % loop through alphas
             for similarityMetric = similarityMetrics % loop through distances
+                exp_file=exp_files{i};motif_file=motif_files{i};ppi_file=ppi_files{i};
+                modeProcess=modeProcesses{i};
+                AgNet = panda_run(lib_path,exp_file, motif_file, ppi_file, panda_out,...
+                        save_temp, alpha, save_pairs, modeProcess,0.5, 0,...
+                        similarityMetric{1}, computing, precision{1}, 0);
                 k=k+1;
+                [Exp,RegNet,TFCoop,TFNames,GeneNames]=processData(exp_file,motif_file,ppi_file,modeProcess);
                 disp('Reading in expression data!');
-                X = load(exp_file);
-                Exp = X.Exp;
                 [NumConditions, NumGenes] = size(Exp);  % transposed expression
                 fprintf('%d genes and %d conditions!\n', NumGenes, NumConditions);
                 disp('Reading in motif data!');
-                X = load(motif_file);
-                RegNet = X.RegNet;
+                RegNet    = NormalizeNetwork(RegNet);
                 disp('Reading in ppi data!');
-                X = load(ppi_file);
-                TFCoop = X.TFCoop;
-                disp('Reading in PANDA network!');
-                X = load(panda_file);
-                AgNet = X.AgNet;
+                TFCoop    = NormalizeNetwork(TFCoop);
                 % Small model (652,1000)
                 indexes = 1:NumConditions;
                 %%
