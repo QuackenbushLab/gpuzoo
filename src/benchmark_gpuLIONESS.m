@@ -56,9 +56,7 @@ for i=1:length(exp_files)% loop through models
                         similarityMetric{1}, computing, precision{1}, 0);
                 k=k+1;
                 [Exp,RegNet,TFCoop,TFNames,GeneNames]=processData(exp_file,motif_file,ppi_file,modeProcess);
-                if isequal(computing,'gpu')
-                    Exp=gpuArray(Exp);
-                end
+
                 disp('Reading in expression data!');
                 [NumConditions, NumGenes] = size(Exp);  % transposed expression
                 fprintf('%d genes and %d conditions!\n', NumGenes, NumConditions);
@@ -76,9 +74,12 @@ for i=1:length(exp_files)% loop through models
                         fprintf('Running LIONESS for sample %d:\n', jj);
                         idx = [1:(jj-1), (jj+1):NumConditions];  % all samples except i
 
-                        disp('Computing coexpresison network:');
-                        GeneCoReg = Coexpression(Exp(idx,:));
-                        GeneCoReg = gather(GeneCoReg);
+                        disp('Computing coexpression network:');
+                        if isequal(computing,'gpu')
+                            Exp=gpuArray(Exp);
+                            GeneCoReg = Coexpression(Exp(idx,:));
+                            GeneCoReg = gather(GeneCoReg);
+                        end
 
                         disp('Normalizing Networks:');
                         GeneCoReg = NormalizeNetwork(GeneCoReg);
@@ -99,9 +100,12 @@ for i=1:length(exp_files)% loop through models
                             fprintf('Running LIONESS for sample %d:\n', jj);
                             idx = [1:(jj-1), (jj+1):NumConditions];  % all samples except i
 
-                            disp('Computing coexpresison network:');
-                            GeneCoReg = Coexpression(Exp(idx,:));
-                            GeneCoReg = gather(GeneCoReg);
+                            disp('Computing coexpression network:');
+                            if isequal(computing,'gpu')
+                                Exp=gpuArray(Exp);
+                                GeneCoReg = Coexpression(Exp(idx,:));
+                                GeneCoReg = gather(GeneCoReg);
+                            end
 
                             disp('Normalizing Networks:');
                             GeneCoReg = NormalizeNetwork(GeneCoReg);
