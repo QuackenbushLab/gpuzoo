@@ -69,7 +69,6 @@ for i=1:length(exp_files)% loop through models
                 % run panda and measure runtime
                 try
                     saveMemory=1;
-                    tic;
                     for jj = indexes
                         fprintf('Running LIONESS for sample %d:\n', jj);
                         idx = [1:(jj-1), (jj+1):NumConditions];  % all samples except i
@@ -88,11 +87,9 @@ for i=1:length(exp_files)% loop through models
 
                         clear idx GeneCoReg LocNet PredNet f; % clean up for next run
                     end
-                    runtime=toc;
                 catch ME
                     try
                         saveMemory=0;
-                        tic;
                         for jj = indexes
                             fprintf('Running LIONESS for sample %d:\n', jj);
                             idx = [1:(jj-1), (jj+1):NumConditions];  % all samples except i
@@ -104,13 +101,12 @@ for i=1:length(exp_files)% loop through models
                             GeneCoReg = NormalizeNetwork(GeneCoReg);
 
                             disp('Running PANDA algorithm:');
-                            LocNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
-                            computing, precision{1}, 0, saveMemory); 
+                            tic;LocNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
+                            computing, precision{1}, 0, saveMemory);runtime=toc; 
                             PredNet = NumConditions * (AgNet - LocNet) + LocNet;
 
                            clear idx GeneCoReg LocNet PredNet f; % clean up for next run
                         end
-                        runtime=toc;
                     catch ME
                         resTable.runtime{k}   = NaN;
                         resTable.model{k}     = model_alias{i};
