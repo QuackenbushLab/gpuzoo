@@ -11,9 +11,9 @@ addpath(genpath('../../gpupanda'))
 %  aws s3 cp s3://granddb/optPANDA/expression/Hugo_exp1_lcl.txt .
 %%
 % Experimental setup
-model_alias= {'medium'};
+model_alias= {'small'};
 exp_files  = {'Hugo_exp1_lcl.txt'};
-motif_files= {'Hugo_motifCellLine.txt'};
+motif_files= {'Hugo_motifCellLine_reduced.txt'};
 ppi_files  = {'ppi2015_freezeCellLine.txt'};
 precisions = {'single'};
 similarityMetrics = {'Tfunction'};%took out minkowski
@@ -57,7 +57,7 @@ for i=1:length(exp_files)% loop through models
                 k=k+1;
                 [Exp,RegNet,TFCoop,TFNames,GeneNames]=processData(exp_file,motif_file,ppi_file,modeProcess);
                 if isequal(computing,'gpu')
-                    Exp=gpuArray(Exp)
+                    Exp=gpuArray(Exp);
                 end
                 disp('Reading in expression data!');
                 [NumConditions, NumGenes] = size(Exp);  % transposed expression
@@ -78,6 +78,7 @@ for i=1:length(exp_files)% loop through models
 
                         disp('Computing coexpresison network:');
                         GeneCoReg = Coexpression(Exp(idx,:));
+                        GeneCoReg = gather(GeneCoReg);
 
                         disp('Normalizing Networks:');
                         GeneCoReg = NormalizeNetwork(GeneCoReg);
@@ -100,6 +101,7 @@ for i=1:length(exp_files)% loop through models
 
                             disp('Computing coexpresison network:');
                             GeneCoReg = Coexpression(Exp(idx,:));
+                            GeneCoReg = gather(GeneCoReg);
 
                             disp('Normalizing Networks:');
                             GeneCoReg = NormalizeNetwork(GeneCoReg);
