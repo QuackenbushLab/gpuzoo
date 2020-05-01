@@ -11,9 +11,9 @@ addpath(genpath('../../gpupanda'))
 %  aws s3 cp s3://granddb/optPANDA/expression/Hugo_exp1_lcl.txt .
 %%
 % Experimental setup
-model_alias= {'small'};
+model_alias= {'medium'};
 exp_files  = {'Hugo_exp1_lcl.txt'};
-motif_files= {'Hugo_motifCellLine_reduced.txt'};
+motif_files= {'Hugo_motifCellLine.txt'};
 ppi_files  = {'ppi2015_freezeCellLine.txt'};
 precisions = {'single'};
 similarityMetrics = {'Tfunction'};%took out minkowski
