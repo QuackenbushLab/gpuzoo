@@ -1,5 +1,5 @@
-addpath(genpath('../netZooM'))
-addpath(genpath('../gibbon'))
+addpath(genpath('../../netZooM'))
+addpath(genpath('../../gpupanda'))
 % Experimental setup
 model_alias= {'large','medium','small'};
 exp_files  = {'THP-1.tsv','Hugo_exp1_lcl.txt','Hugo_exp1_lcl.txt'};
@@ -60,13 +60,13 @@ for i=1:length(exp_files)% loop through models
                 % run panda and measure runtime
                 try
                     saveMemory=0;
-                    tic;AgNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
-                        computing, precision{1}, 0, saveMemory);runtime=toc;
+                    t0=tic;AgNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
+                        computing, precision{1}, 0, saveMemory);runtime=toc(t0);
                 catch ME
                     try
                         saveMemory=1;
-                        tic;AgNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
-                        computing, precision{1}, 0, saveMemory);runtime=toc; 
+                        t0=tic;AgNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
+                        computing, precision{1}, 0, saveMemory);runtime=toc(t0); 
                     catch ME
                         resTable.runtime{k}   = NaN;
                         resTable.model{k}     = model_alias{i};

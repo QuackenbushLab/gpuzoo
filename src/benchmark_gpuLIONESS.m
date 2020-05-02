@@ -80,7 +80,7 @@ for i=1:length(exp_files)% loop through models
                             GeneCoReg = Coexpression(Exp(idx,:));
                             GeneCoReg = gather(GeneCoReg);
                         else
-                            GeneCoReg = Coexpression(Exp(idx,:));
+                            GeneCoReg = Coexpression(Exploop(idx,:));
                         end
 
                         disp('Normalizing Networks:');
@@ -108,7 +108,7 @@ for i=1:length(exp_files)% loop through models
                                 GeneCoReg = Coexpression(Exp(idx,:));
                                 GeneCoReg = gather(GeneCoReg);
                             else
-                                GeneCoReg = Coexpression(Exp(idx,:));
+                                GeneCoReg = Coexpression(Exploop(idx,:));
                             end
 
                             disp('Normalizing Networks:');
