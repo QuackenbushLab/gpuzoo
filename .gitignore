@@ -3,5 +3,5 @@
 /paper
 .DS_Store
 *.mat
-gpupanda/data/MATLAB/lioness/cpuLIONESS
-gpupanda/data/MATLAB/lioness/gpuLIONESS
+data/MATLAB/lioness/cpuLIONESS
+data/MATLAB/lioness/gpuLIONESS
