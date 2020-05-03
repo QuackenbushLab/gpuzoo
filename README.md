@@ -8,6 +8,7 @@ This repository contains the figure generation scripts and the code for benchmar
 
 gpuPANDA and gpuLIONESS are available through [netZooM](https://github.com/netZoo/netZooM) (> 0.4.3) with a step-by-step [tutorial](https://github.com/netZoo/netZooM/tree/master/tutorials/gpu_panda_lioness) and [netZooPy](https://github.com/netZoo/netZooPy) > 0.6.2) with a step-by-step [tutorial](https://github.com/netZoo/netZooPy/tree/master/tutorials/gpupanda).
 
+To download the data used for the benchmark, visit [GRAND database](https://grand.networkmedicine.org/download/).
 ### Issues
 
 Feel free to open an issue [here](https://github.com/QuackenbushLab/gpupanda/issues) if you have any comment about the benchmarks and [here](https://github.com/netZoo/netZooM/issues)
