@@ -7,7 +7,8 @@ import os
 os.chdir('../../gpupanda')
 python_gpu2_times= [.10, .11, .10] #single precision, alpha=0.1, Tfunction
 python_gpu2_time = np.mean(python_gpu2_times)
-matlab_gpu2_time = [0.720859] #single precision, alpha=0.1, Tfunction
+python_cpu2_times = [1.77, 1.55, 1.66] #single precision, alpha=0.1, Tfunction
+python_cpu2_time = np.mean(python_cpu2_times)
 
 #Check that (small, alpha=0.1, single precision) networks are identical in gpuPANDA and PANDA in python
 singleSmallGPU=pd.read_csv('data/single_gpu_panda.txt',sep=' ', header=None)
@@ -24,6 +25,24 @@ plt.xlabel('gpuPANDA edge weights')
 plt.ylabel('PANDA edge weights')
 plt.plot([-6,26],[-6,26])
 plt.subplot(121)
-plt.bar([1,2],[python_gpu2_time,matlab_gpu2_time])
+plt.bar([1,2],[python_gpu2_time,python_cpu2_time])
 plt.ylabel('Run time (s)')
-plt.xticks([1,2], ('gpuPANDA (Python)', 'gpuPANDA (MATLAB)'))
+plt.xticks([1,2], ('gpuPANDA (Python)', 'PANDA (Python)'))
+
+#Plot gpuLIONESS
+gpu1_lioness=pd.read_csv('data/results/lioness/LIONESS_gpu_gpu1_resTable.csv')
+cpu2_lioness=pd.read_csv('data/results/lioness/LIONESS_cpu_cpu2_resTable.csv')
+lionessGPU=pd.read_csv('data/results/lioness/gpuLIONESS.csv',header=None)
+lionessCPU=pd.read_csv('data/results/lioness/cpuLIONESS.csv',header=None)
+np.max(np.max(np.abs(lionessGPU-lionessCPU)))
+plt.subplot(122)
+plt.plot(lionessGPU.values.flatten(), lionessCPU.values.flatten(), 'o',
+         markeredgewidth=2, alpha=0.5)
+plt.text(15, -50, '0.015', fontsize=12)
+plt.xlabel('gpuLIONESS edge weights')
+plt.ylabel('LIONESS edge weights')
+plt.plot([-60,110],[-60,110])
+plt.subplot(121)
+plt.bar([1,2],[gpu1_lioness.runtime[0],cpu2_lioness.runtime[0]])
+plt.ylabel('Run time (s)')
+plt.xticks([1,2], ('gpuLIONESS (GPU1)', 'LIONESS (CPU2)'))
