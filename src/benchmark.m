@@ -3,6 +3,12 @@ addpath(genpath('../../gpupanda'))
 % Experimental setup
 model_alias= {'large','medium','small'};
 exp_files  = {'THP-1.tsv','Hugo_exp1_lcl.txt','Hugo_exp1_lcl.txt'};
+% 1. 'motif_complete_reduced.txt' is exactly the same as
+% 'Hugo_motifCellLine.txt' but padded with zero for ~1000 TFs to get
+% coverage for 1603 TFs
+% 2. 'Hugo_motifCellLine_reduced.txt' is exactly the same as
+% 'Hugo_motifCellLine.txt' but reduced for 1000 genes to get a network
+% for 1000 genes and 652 TFs
 motif_files= {'motif_complete_reduced.txt','Hugo_motifCellLine.txt','Hugo_motifCellLine_reduced.txt'};
 ppi_files  = {'ppi_complete.txt','ppi2015_freezeCellLine.txt','ppi2015_freezeCellLine.txt'};
 precisions = {'single','double'};
