@@ -6,12 +6,12 @@ import math
 import os
 
 os.chdir('../../gpupanda')
-cpu1 = pd.read_csv('data/results/cpu_cpu1_resTable.csv')
-cpu2p1 = pd.read_csv('data/results/cpu2/cpu_cpu2_resTable_Part1.csv')
+cpu1 = pd.read_csv('data/MATLAB/panda/cpu_cpu1_resTable.csv')
+cpu2p1 = pd.read_csv('data/MATLAB/panda/cpu2/cpu_cpu2_resTable_Part1.csv')
 cpu2p1=cpu2p1.iloc[:,5:]
-cpu2p2 = pd.read_csv('data/results/cpu2/cpu_cpu2_resTable_Part2.csv')
-gpu1 = pd.read_csv('data/results/gpu_gpu1_resTable.csv')
-gpu2 = pd.read_csv('data/results/gpu_gpu2_resTable.csv')
+cpu2p2 = pd.read_csv('data/MATLAB/panda/cpu2/cpu_cpu2_resTable_Part2.csv')
+gpu1 = pd.read_csv('data/MATLAB/panda/gpu_gpu1_resTable.csv')
+gpu2 = pd.read_csv('data/MATLAB/panda/gpu_gpu2_resTable.csv')
 cpu1Price = 2.304
 cpu2Price = 1.808
 gpu1Price = 3.06
@@ -33,6 +33,39 @@ cpu2['runtime'].iloc[a[0][0]:]=cpu2p2['runtime']
 a=cpu2p1.shape[0]
 assert(cpu2.iloc[:a,1:].equals(cpu2p1.iloc[:a,1:]))
 cpu2['runtime'].iloc[:a]=cpu2p1['runtime']
+
+# Produce DFs
+# 1. Run time Fold change table
+fcTbl = cpu1.copy()
+fcTbl.columns = ['cpu1/gpu1','model','precision','alpha','similarity']
+fcTbl['cpu2/gpu1'] = cpu2.runtime / gpu1.runtime
+fcTbl['cpu1/gpu2'] = cpu1.runtime / gpu2.runtime
+fcTbl['cpu2/gpu2'] = cpu2.runtime / gpu2.runtime
+fcTbl['cpu1/gpu1'] = cpu1.runtime / gpu1.runtime
+# Reorder DF
+fcTbl = fcTbl[['cpu1/gpu1','cpu1/gpu2','cpu2/gpu1','cpu2/gpu2','model','precision','alpha','similarity']]
+fcTbl.to_csv('data/MATLAB/panda/fcRuntimePanda.csv')
+# 2. Runtime table
+runtimeTbl = cpu1.copy()
+runtimeTbl.columns = ['cpu1','model','precision','alpha','similarity']
+runtimeTbl['cpu2'] = cpu2.runtime
+runtimeTbl['gpu1'] = gpu1.runtime
+runtimeTbl['gpu2'] = gpu2.runtime
+# Reorder DF
+runtimeTbl = runtimeTbl[['cpu1','cpu2','gpu1','gpu2','model','precision','alpha','similarity']]
+runtimeTbl.to_csv('data/MATLAB/panda/RuntimePanda.csv')
+# 3. Cost table
+runtimeTbl.cpu1 = runtimeTbl.cpu1/3600 * cpu1Price
+runtimeTbl.cpu2 = runtimeTbl.cpu2/3600 * cpu2Price
+runtimeTbl.gpu1 = runtimeTbl.gpu1/3600 * gpu1Price
+runtimeTbl.gpu2 = runtimeTbl.gpu2/3600 * gpu2Price
+runtimeTbl.to_csv('data/MATLAB/panda/CostPanda.csv')
+# 4. Cost Fold Change table
+fcTbl['cpu1/gpu1'] = fcTbl['cpu1/gpu1'] * cpu1Price/gpu1Price
+fcTbl['cpu1/gpu2'] = fcTbl['cpu1/gpu2'] * cpu1Price/gpu2Price
+fcTbl['cpu2/gpu1'] = fcTbl['cpu2/gpu1'] * cpu2Price/gpu1Price
+fcTbl['cpu2/gpu2'] = fcTbl['cpu2/gpu2'] * cpu2Price/gpu2Price
+fcTbl.to_csv('data/MATLAB/panda/fcCostPanda.csv')
 
 k=1
 N=len(distCell)
