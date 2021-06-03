@@ -44,25 +44,25 @@ resTable.Properties.VariableNames = {'runtime','model','precision','alpha','simi
 %%
 fprintf('Starting benchmarks \n');
 for i=1:length(exp_files)% loop through models
+    % LCL 
+    exp_file=exp_files{i};motif_file=motif_files{i};ppi_file=ppi_files{i};
+    modeProcess=modeProcesses{i};%similarityMetric=similarityMetric{1};
+    %precision=precision{1};
+    % Large model (1603,43698)
+    [Exp,RegNet,TFCoop,TFNames,GeneNames]=processData(exp_file,motif_file,ppi_file,modeProcess);
+    disp('Computing coexpression network:');
+    GeneCoReg = Coexpression(Exp);
+    % Medium model (652,27149)
+    % Small model (652,1000)                
+    %%
+    disp('Normalizing Networks:');
+    RegNet    = NormalizeNetwork(RegNet);
+    GeneCoReg = NormalizeNetwork(GeneCoReg);
+    TFCoop    = NormalizeNetwork(TFCoop);
     for precision = precisions % loop through precisions
         for alpha = alphas % loop through alphas
             for similarityMetric = similarityMetrics % loop through distances
                 k=k+1;
-                % LCL 
-                exp_file=exp_files{i};motif_file=motif_files{i};ppi_file=ppi_files{i};
-                modeProcess=modeProcesses{i};%similarityMetric=similarityMetric{1};
-                %precision=precision{1};
-                % Large model (1603,43698)
-                [Exp,RegNet,TFCoop,TFNames,GeneNames]=processData(exp_file,motif_file,ppi_file,modeProcess);
-                disp('Computing coexpression network:');
-                GeneCoReg = Coexpression(Exp);
-                % Medium model (652,27149)
-                % Small model (652,1000)
-                %%
-                disp('Normalizing Networks:');
-                RegNet    = NormalizeNetwork(RegNet);
-                GeneCoReg = NormalizeNetwork(GeneCoReg);
-                TFCoop    = NormalizeNetwork(TFCoop);
                 % run panda and measure runtime
                 try
                     saveMemory=0;
