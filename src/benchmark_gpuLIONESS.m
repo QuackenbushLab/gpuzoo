@@ -16,14 +16,14 @@ exp_files  = {'Hugo_exp1_lcl.txt'};
 motif_files= {'Hugo_motifCellLine.txt'};
 ppi_files  = {'ppi2015_freezeCellLine.txt'};
 precisions = {'single'};
-similarityMetrics = {'Tfunction'};%took out minkowski
+similarityMetrics = {'Tfunction'};
 modeProcesses = {'union'};
 alphas = [0.1];
 nExps  = length(exp_files)*length(precisions)*length(similarityMetrics)...
     *length(alphas);
 k=0; % benchmark iterator
-computing = 'cpu';
-hardware  = 'cpu2';
+computing = 'gpu';
+hardware  = 'gpu1';
 %%
 % dry run to compile 
 fprintf('Performing dry run to compile libraries \n');
@@ -78,13 +78,18 @@ for i=1:length(exp_files)% loop through models
                         if isequal(computing,'gpu')
                             Exp=gpuArray(Exploop);
                             GeneCoReg = Coexpression(Exp(idx,:));
-                            GeneCoReg = gather(GeneCoReg);
+                            if isequal(hardware,'gpu2')
+                                GeneCoReg = gather(GeneCoReg);
+                            end
                         else
                             GeneCoReg = Coexpression(Exploop(idx,:));
                         end
 
                         disp('Normalizing Networks:');
                         GeneCoReg = NormalizeNetwork(GeneCoReg);
+                        if isequal(hardware,'gpu1')
+                            GeneCoReg = gather(GeneCoReg);
+                        end
 
                         disp('Running PANDA algorithm:');
                         
