@@ -44,6 +44,15 @@ AgNet = panda_run(lib_path,exp_file1, motif_file1, ppi_file1, panda_out,...
 resTable = cell2table(cell(1,5));
 resTable.Properties.VariableNames = {'runtime','model','precision','alpha','similarity'};
 %%
+% define parameters for online coexpression
+exp_file=exp_files{1};motif_file=motif_files{1};ppi_file=ppi_files{1};
+[Exploop,RegNet,TFCoop,TFNames,GeneNames]=processData(exp_file,motif_file,ppi_file,modeProcess);
+computeExpression='online';
+[n, NumGenes] = size(Exploop);
+mi=mean(Exploop,1);
+stdd=std(Exploop,1);
+covv=cov(Exploop);
+%%
 fprintf('Starting benchmarks \n');
 for i=1:length(exp_files)% loop through models
     for precision = precisions % loop through precisions
@@ -77,7 +86,12 @@ for i=1:length(exp_files)% loop through models
                         disp('Computing coexpression network:');
                         if isequal(computing,'gpu')
                             Exp=gpuArray(Exploop);
-                            GeneCoReg = Coexpression(Exp(idx,:));
+                            if isequal(computeExpression,'online')
+                                si=Exp(idx,:);
+                                onCoex=onlineCoexpression(si,n,mi,stdd,covv);
+                            else
+                                GeneCoReg = Coexpression(Exp(idx,:));
+                            end
                             if isequal(hardware,'gpu2')
                                 GeneCoReg = gather(GeneCoReg);
                             end
