@@ -88,7 +88,7 @@ for i=1:length(exp_files)% loop through models
                             Exp=gpuArray(Exploop);
                             if isequal(computeExpression,'online')
                                 si=Exp(idx,:);
-                                onCoex=onlineCoexpression(si,n,mi,stdd,covv);
+                                GeneCoReg=onlineCoexpression(si,n,mi,stdd,covv);
                             else
                                 GeneCoReg = Coexpression(Exp(idx,:));
                             end
