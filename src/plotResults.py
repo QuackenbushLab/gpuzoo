@@ -346,3 +346,19 @@ axes.set_ylim([0,20])
 axes.set_aspect('equal', adjustable='box')
 
 plt.savefig('paper/figures/figure2/figure2b.eps', format='eps')
+
+
+import pandas as pd
+import numpy as np
+
+tfs = ['TF_'+str(e) for e in list(range(100))]
+genes = ['Gene_'+str(e) for e in list(range(900))]
+comb = tfs + genes
+
+sample1 = ['omic1_sample'+str(e) for e in list(range(100))]
+sample2 = ['omic2_sample'+str(e) for e in list(range(500))]
+
+X1pd = pd.DataFrame(X1, index=comb, columns=sample1)
+X2pd = pd.DataFrame(X2, index=comb, columns=sample2)
+X1pd.to_csv('~/Downloads/omic1.csv')
+X2pd.to_csv('~/Downloads/omic2.csv')
