@@ -22,6 +22,8 @@ nExps  = length(exp_files)*length(precisions)*length(similarityMetrics)...
 k=0; % benchmark iterator
 computing = 'cpu';
 hardware  = 'cpu2';
+repeats = 3; % number of repetetions
+vecRuntime = [];
 %%
 % dry run to compile 
 fprintf('Performing dry run to compile libraries \n');
@@ -63,27 +65,31 @@ for i=1:length(exp_files)% loop through models
         for alpha = alphas % loop through alphas
             for similarityMetric = similarityMetrics % loop through distances
                 k=k+1;
-                % run panda and measure runtime
-                try
-                    saveMemory=0;
-                    t0=tic;AgNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
-                        computing, precision{1}, 0, saveMemory);runtime=toc(t0);
-                catch ME
+                for g=1:repeats
+                    % run panda and measure runtime
                     try
-                        saveMemory=1;
+                        saveMemory=0;
                         t0=tic;AgNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
-                        computing, precision{1}, 0, saveMemory);runtime=toc(t0); 
+                            computing, precision{1}, 0, saveMemory);runtime=toc(t0);
                     catch ME
-                        resTable.runtime{k}   = NaN;
-                        resTable.model{k}     = model_alias{i};
-                        resTable.precision{k} = precision{1};
-                        resTable.alpha{k}     = alpha;
-                        resTable.similarity{k}= similarityMetric{1}; 
-                        display('computation failed \n')   
-                        continue
+                        try
+                            saveMemory=1;
+                            t0=tic;AgNet = PANDA(RegNet, GeneCoReg, TFCoop, alpha, 0.5, similarityMetric{1},...
+                            computing, precision{1}, 0, saveMemory);runtime=toc(t0); 
+                        catch ME
+                            resTable.runtime{k}   = NaN;
+                            resTable.model{k}     = model_alias{i};
+                            resTable.precision{k} = precision{1};
+                            resTable.alpha{k}     = alpha;
+                            resTable.similarity{k}= similarityMetric{1}; 
+                            display('computation failed \n')   
+                            continue
+                        end
                     end
+                    vecRuntime = [vecRuntime runtime];
                 end
-                resTable.runtime{k}   = runtime;
+                resTable.runtime{k}   = mean(vecRuntime);
+                resTable.runtime{k}   = std(vecRuntime);
                 resTable.model{k}     = model_alias{i};
                 resTable.precision{k} = precision{1};
                 resTable.alpha{k}     = alpha;
