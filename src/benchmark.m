@@ -65,6 +65,7 @@ for i=1:length(exp_files)% loop through models
         for alpha = alphas % loop through alphas
             for similarityMetric = similarityMetrics % loop through distances
                 k=k+1;
+                vecRuntime=[];
                 for g=1:repeats
                     % run panda and measure runtime
                     try
@@ -89,7 +90,7 @@ for i=1:length(exp_files)% loop through models
                     vecRuntime = [vecRuntime runtime];
                 end
                 resTable.runtime{k}   = mean(vecRuntime);
-                resTable.runtime{k}   = std(vecRuntime);
+                resTable.stdruntime{k}= std(vecRuntime);
                 resTable.model{k}     = model_alias{i};
                 resTable.precision{k} = precision{1};
                 resTable.alpha{k}     = alpha;
