@@ -53,7 +53,7 @@ mi=mean(Exploop,1);
 stdd=std(Exploop,1);
 covv=cov(Exploop);
 %%
-numGPUs = gpuDeviceCount("available");
+numGPUs = gpuDeviceCount();
 parpool(numGPUs);
 fprintf(['Number of GPUs is ',num2str(numGPUs),'\n'])
 %%
