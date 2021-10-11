@@ -119,6 +119,7 @@ for i=1:length(exp_files)% loop through models
                     end
                     runtime=toc(t0); 
                 catch ME
+                    fprintf('device error \n');
                     try
                         t0=tic;saveMemory=0;
                         for jj = indexes
