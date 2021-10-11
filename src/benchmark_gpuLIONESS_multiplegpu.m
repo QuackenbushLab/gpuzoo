@@ -115,14 +115,14 @@ for i=1:length(exp_files)% loop through models
                         computing, precision{1}, 0, saveMemory);
                         PredNet = NumConditions * (AgNet - LocNet) + LocNet;
 
-                        clear idx GeneCoReg LocNet PredNet f; % clean up for next run
+                        %clear idx GeneCoReg LocNet PredNet f; % clean up for next run
                     end
                     runtime=toc(t0); 
                 catch ME
                     fprintf('device error \n');
                     try
                         t0=tic;saveMemory=0;
-                        for jj = indexes
+                        parfor jj = indexes
                             fprintf('Running LIONESS for sample %d:\n', jj);
                             idx = [1:(jj-1), (jj+1):NumConditions];  % all samples except i
 
@@ -143,7 +143,7 @@ for i=1:length(exp_files)% loop through models
                             computing, precision{1}, 0, saveMemory); 
                             PredNet = NumConditions * (AgNet - LocNet) + LocNet;
 
-                           clear idx GeneCoReg LocNet PredNet f; % clean up for next run
+                           %clear idx GeneCoReg LocNet PredNet f; % clean up for next run
                         end
                         runtime=toc(t0); 
                     catch ME
