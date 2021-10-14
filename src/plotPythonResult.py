@@ -47,6 +47,8 @@ plt.xlabel('gpuLIONESS edge weights')
 plt.ylabel('LIONESS edge weights')
 plt.plot([-60,110],[-60,110])
 plt.subplot(121)
-plt.bar([1,2,3,4],[gpu1_lioness.runtime[0],gpu1_online_lioness.runtime[0],gpu2_lioness.runtime[0],cpu2_lioness.runtime[0]])
+
+
+plt.bar([1,2,3,4,5],[gpu1_lioness.runtime[0],gpu1_online_lioness.runtime[0],gpu2_lioness.runtime[0],cpu1_lioness.runtime[0],cpu2_lioness.runtime[0]])
 plt.ylabel('Run time (s)')
-plt.xticks([1,2,3,4], ('gpuLIONESS (GPU1)','gpuLIONESS on-line (GPU1)','gpuLIONESS (GPU2)', 'LIONESS (CPU2)'))
+plt.xticks([1,2,3,4,5], ('gpuLIONESS \n(GPU1)','gpuLIONESS on-line \n(GPU1)','gpuLIONESS \n(GPU2)', 'LIONESS \n(CPU1)', 'LIONESS \n(CPU2)'))
