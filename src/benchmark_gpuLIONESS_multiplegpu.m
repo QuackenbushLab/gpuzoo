@@ -119,7 +119,7 @@ for i=1:length(exp_files)% loop through models
                     end
                     runtime=toc(t0); 
                 catch ME
-                    fprintf('device error \n');
+                    error('device error \n');
                     try
                         t0=tic;saveMemory=0;
                         parfor jj = indexes
@@ -166,4 +166,4 @@ for i=1:length(exp_files)% loop through models
     end
 end
 
-writetable(resTable,['LIONESS_' computing '_' hardware '_resTable.csv']);
+writetable(resTable,['LIONESS_' computing '_' hardware '_' num2str(numGPUs) 'gpus' '_resTable.csv']);
