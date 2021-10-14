@@ -167,3 +167,4 @@ for i=1:length(exp_files)% loop through models
 end
 
 writetable(resTable,['LIONESS_' computing '_' hardware '_' num2str(numGPUs) 'gpus' '_resTable.csv']);
+
