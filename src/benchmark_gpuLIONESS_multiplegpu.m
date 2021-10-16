@@ -23,7 +23,7 @@ nExps  = length(exp_files)*length(precisions)*length(similarityMetrics)...
     *length(alphas);
 k=0; % benchmark iterator
 computing = 'gpu';
-hardware  = 'gpu1';
+hardware  = 'gpu2';
 %%
 % dry run to compile 
 fprintf('Performing dry run to compile libraries \n');
@@ -47,11 +47,15 @@ resTable.Properties.VariableNames = {'runtime','model','precision','alpha','simi
 % define parameters for online coexpression
 exp_file=exp_files{1};motif_file=motif_files{1};ppi_file=ppi_files{1};
 [Exploop,RegNet,TFCoop,TFNames,GeneNames]=processData(exp_file,motif_file,ppi_file,modeProcess);
-computeExpression='online';
+computeExpression='serial';
 [n, NumGenes] = size(Exploop);
 mi=mean(Exploop,1);
 stdd=std(Exploop,1);
 covv=cov(Exploop);
+%%
+numGPUs = gpuDeviceCount();
+parpool(numGPUs);
+fprintf(['Number of GPUs is ',num2str(numGPUs),'\n'])
 %%
 fprintf('Starting benchmarks \n');
 for i=1:length(exp_files)% loop through models
@@ -79,7 +83,7 @@ for i=1:length(exp_files)% loop through models
                 % run panda and measure runtime
                 try
                     t0=tic;saveMemory=0;
-                    for jj = indexes
+                    parfor jj = indexes
                         fprintf('Running LIONESS for sample %d:\n', jj);
                         idx = [1:(jj-1), (jj+1):NumConditions];  % all samples except i
 
@@ -111,13 +115,14 @@ for i=1:length(exp_files)% loop through models
                         computing, precision{1}, 0, saveMemory);
                         PredNet = NumConditions * (AgNet - LocNet) + LocNet;
 
-                        clear idx GeneCoReg LocNet PredNet f; % clean up for next run
+                        %clear idx GeneCoReg LocNet PredNet f; % clean up for next run
                     end
                     runtime=toc(t0); 
                 catch ME
+                    error('device error \n');
                     try
                         t0=tic;saveMemory=0;
-                        for jj = indexes
+                        parfor jj = indexes
                             fprintf('Running LIONESS for sample %d:\n', jj);
                             idx = [1:(jj-1), (jj+1):NumConditions];  % all samples except i
 
@@ -138,7 +143,7 @@ for i=1:length(exp_files)% loop through models
                             computing, precision{1}, 0, saveMemory); 
                             PredNet = NumConditions * (AgNet - LocNet) + LocNet;
 
-                           clear idx GeneCoReg LocNet PredNet f; % clean up for next run
+                           %clear idx GeneCoReg LocNet PredNet f; % clean up for next run
                         end
                         runtime=toc(t0); 
                     catch ME
@@ -161,4 +166,5 @@ for i=1:length(exp_files)% loop through models
     end
 end
 
-writetable(resTable,['LIONESS_' computing '_' hardware '_resTable.csv']);
+writetable(resTable,['LIONESS_' computing '_' hardware '_' num2str(numGPUs) 'gpus' '_resTable.csv']);
+
