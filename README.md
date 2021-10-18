@@ -1,6 +1,6 @@
-## GPU-accelerated inference of gene regulatory networks
+## GPU-accelerated estimation of gene regulatory networks
 
-Code base for gpuZoo: Cost-effective inference of gene regulatory networks using the Graphics Processing Unit. [doi: 10.1101/2021.07.13.452214](https://www.biorxiv.org/content/10.1101/2021.07.13.452214v1.abstract)
+Code base for gpuZoo: Cost-effective estimation of gene regulatory networks using the Graphics Processing Unit. [doi: 10.1101/2021.07.13.452214](https://www.biorxiv.org/content/10.1101/2021.07.13.452214v1.abstract)
 
 ### Introduction
 
