@@ -140,9 +140,9 @@ r1 = np.arange(len(gpu1data))
 r2 = [x + barWidth for x in r1]
 r3 = [x + barWidth for x in r2]
 # Make the plot
-plt.bar(r1, gpu1data, color='#7f6d5f', width=barWidth, edgecolor='white', label='GPU1')
-plt.bar(r2, cpu1data, color='#557f2d', width=barWidth, edgecolor='white', label='CPU1')
-plt.bar(r3, cpu2data, color='#2d7f5e', width=barWidth, edgecolor='white', label='CPU2')
+plt.errbar(r1, gpu1data, yerr= ,color='#7f6d5f', width=barWidth, edgecolor='white', label='GPU1')
+plt.errbar(r2, cpu1data, yerr=4.19 ,color='#557f2d', width=barWidth, edgecolor='white', label='CPU1')
+plt.errbar(r3, cpu2data, yerr= ,color='#2d7f5e', width=barWidth, edgecolor='white', label='CPU2')
 # Add xticks on the middle of the group bars
 plt.xlabel('group', fontweight='bold')
 plt.xticks([r + barWidth for r in range(len(gpu1data))], ['0.1', '0.2', '0.3'])
