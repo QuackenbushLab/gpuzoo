@@ -1,5 +1,7 @@
 ## GPU-accelerated inference of gene regulatory networks
 
+Code base for gpuZoo: Cost-effective inference of gene regulatory networks using the Graphics Processing Unit. [doi: 10.1101/2021.07.13.452214](https://www.biorxiv.org/content/10.1101/2021.07.13.452214v1.abstract)
+
 ### Introduction
 
 gpuZoo is a GPU-accelerated implementation of PANDA, PUMA, SPIDER, and LIONESS to generate aggregate and single-sample gene regulatory networks.
