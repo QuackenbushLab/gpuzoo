@@ -1,0 +1,4 @@
+runtime,model,precision,alpha,similarity,stdruntime
+2062.70576966667,transcript,single,0.1,Tfunction,3.6982783303511
+1122.67537633333,transcript,single,0.2,Tfunction,7.33231496351748
+785.985539666667,transcript,single,0.3,Tfunction,2.9707728769218
