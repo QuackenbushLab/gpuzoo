@@ -1,5 +1,6 @@
 df = readtable('cpu1/cpu_cpu1_std_resTable.csv');
 df.cv = (df.stdruntime./df.runtime)*100;
+
 subplot(2,1,1)
 histogram(df.cv)
 ax=gca;
@@ -22,4 +23,10 @@ xlim([0 9]);
 
 df3 = readtable('cpu2/cpu_cpu2_std_resTable.csv');
 df3.cv = (df3.stdruntime./df3.runtime)*100;
+mean(df3.cv)
 
+a=[0.86 0.02 0.76];
+mean(a)
+
+b=[0.473 0.155 0.26];
+mean(b)
